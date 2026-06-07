@@ -416,11 +416,11 @@ section.bf-hero .bf-hero__subtitle{
 /* "%" = mint, BEHIND the glass (z-index 1): bright where it clears the glyphs,
    gently frosted where the translucent "5" overlaps it.  Figma: Poppins 900 mint */
 .bf-hero__pct{
-    /* Figma geometry: "%" left edge at ~54% across the "85", top ~ -12% above it,
-       right edge sticks out past the "5" -> sits over the top-right, overlapping less */
-    position:absolute; z-index:1; top:-12%; left:54%; right:auto;
+    /* Composition matched 1:1 to the index hero: "%" anchored to the RIGHT edge of
+       the "85", hanging off its upper-right so it overlaps the "5" less. */
+    position:absolute; z-index:1; top:-10%; right:-9%; left:auto;
     font-family:Poppins,Arial,sans-serif; font-weight:900; line-height:1;
-    font-size:clamp(9rem,min(15.6vw,28vh),33rem); letter-spacing:-.01em;   /* Figma 300px @1920 = 0.6 of 85 */
+    font-size:clamp(6.1rem,min(11.4vw,20.6vh),24.5rem); letter-spacing:-.01em;   /* 0.44 of the 85 — matches index ratio */
     color:var(--bf-mint);
 }
 
@@ -446,14 +446,14 @@ section.bf-hero .bf-hero__subtitle{
     .bf-hero__price{ justify-content:center; }
     .bf-hero__visual{ order:2; }
     .bf-hero__glass{ font-size:clamp(12rem,42vw,34rem); }
-    .bf-hero__pct{ font-size:clamp(8rem,28.5vw,23rem); }
+    .bf-hero__pct{ font-size:clamp(6.3rem,22vw,17.8rem); }
 }
 @media (max-width:600px){
     .bf-hero__title-bf{ font-size:clamp(3rem,9vw,4.4rem); }
     .bf-hero__title-rest{ font-size:clamp(2.6rem,8vw,4rem); }
     section.bf-hero .bf-hero__subtitle{ font-size:clamp(1.4rem,4.5vw,2rem); }
     .bf-hero__glass{ font-size:50vw; }
-    .bf-hero__pct{ font-size:34vw; }
+    .bf-hero__pct{ font-size:26vw; }
 }
 </style>
 
