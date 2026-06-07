@@ -4,7 +4,7 @@ A static, front-end prototype of two responsive marketing pages, built as a port
 piece. Hand-built hero sections (custom CSS, including a layered "mirror glass" effect)
 composed with production-style page layout.
 
-**Live demo:** _add the GitHub Pages URL here once deployed_
+**Live demo:** https://vicgdimitrova.github.io/siteground-bf-prototype/
 
 ## Pages
 - **`index.html`** — Home / hero + services. Its primary CTAs link to the WordPress page.
