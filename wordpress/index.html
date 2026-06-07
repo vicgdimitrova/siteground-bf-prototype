@@ -329,6 +329,15 @@ section.bf-hero > .fit-wide{
     row-gap:     clamp(1.4rem, min(2.6vw, 2.8vh), 8rem);
 }
 
+/* Center the Trustpilot row in the purple space BELOW the 4 cards (desktop only),
+   so it stops peeking at the bottom edge of the viewport — it now sits mid-way
+   between the cards and the next section, revealed by a small scroll. Mobile/tablet
+   (stacked layout) keep their natural spacing. */
+@media (min-width:1024px){
+    section.bf-hero > .fit-wide{ padding-bottom: 0; }
+    section.bf-hero .trustpilot--wrapper{ margin-top: clamp(3rem, min(6vw, 9.5vh), 9rem); }
+}
+
 /* ===== Promo lenta banner — EXACT design (CSS Region file + PNG):
    45px tall, #02ECBE, black Inter ~20.5px, "BLACK FRIDAY" bold ===== */
 .promobars.bg--color-green-promo{ background-color:#02ECBE; }
