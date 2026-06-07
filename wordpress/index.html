@@ -319,6 +319,16 @@ section.bf-hero{
 }
 section.bf-hero *{box-sizing:border-box;}
 
+/* Responsive vertical fit: gently compress the hero's TOP PADDING and the GAP above
+   the 4 feature cards on shorter viewports, so the cards stay fully visible and the
+   Trustpilot row is the fold line (like the original page). Height-aware via a vh term
+   with safe rem FLOORS so text rhythm never cramps; full roomy spacing returns on tall
+   screens. Only dead space is trimmed — the BLACK FRIDAY copy/85% are untouched. */
+section.bf-hero > .fit-wide{
+    padding-top: clamp(1.4rem, min(2.6vw, 2.8vh), 6.4rem);
+    row-gap:     clamp(1.4rem, min(2.6vw, 2.8vh), 8rem);
+}
+
 /* ===== Promo lenta banner — EXACT design (CSS Region file + PNG):
    45px tall, #02ECBE, black Inter ~20.5px, "BLACK FRIDAY" bold ===== */
 .promobars.bg--color-green-promo{ background-color:#02ECBE; }
@@ -342,7 +352,7 @@ section.bf-hero *{box-sizing:border-box;}
 /* ---------- left: promo copy ---------- */
 .bf-hero__copy{
     display:flex; flex-direction:column; align-items:flex-start;
-    gap:clamp(1.6rem,min(2.4vw,3.4vh),4.6rem);   /* looser rhythm (Figma ~40–49px @1920) */
+    gap:clamp(1.4rem,min(2.4vw,3.0vh),4.6rem);   /* looser rhythm; vh term also helps short viewports fit the cards */
     max-width:48rem; z-index:2;
 }
 /* badge: thin + long + saturated solid mint pill, dark text (screenshot 1) */
