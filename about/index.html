@@ -350,7 +350,7 @@ section.about-design{
 section.about-design .fit-wide{ width:100%; }
 .about-design__inner{
     display:flex; flex-direction:column;
-    gap:clamp(1.05rem,1.5vh,1.8rem);
+    gap:clamp(2.6rem,3.6vh,4.4rem);   /* space between the title block and the columns */
     margin:auto; width:100%;        /* margin:auto centres the block both ways (don't use 'auto 0') */
 }
 
@@ -392,6 +392,7 @@ section.about-design .fit-wide{ width:100%; }
 .ad-block p{
     margin:0 0 .45rem; font-family:Inter,Arial,sans-serif;
     font-size:clamp(1.15rem,.9vw,1.3rem); line-height:1.44; break-inside:avoid;
+    text-align:justify;            /* flush both edges (no hyphenation) */
 }
 .ad-block p:last-child{ margin-bottom:0; }
 .ad-block p strong{ color:#fff; font-weight:600; }
@@ -1006,7 +1007,7 @@ if (document.querySelectorAll('.counter')[0]) {
         <div class="about-design__intro">
             <span class="about-design__badge">Case study</span>
             <h1 class="about-design__title">Black Friday Campaign — <span>Design Rationale</span></h1>
-            <p class="about-design__lead">A short walkthrough of the thinking behind the campaign: how each piece carries the offer, and how the bold, festive look still reads as SiteGround.</p>
+            <p class="about-design__lead">Here’s a short walkthrough of the thinking behind the campaign: how each piece carries the offer, and how the bold, festive look still reads as SiteGround.</p>
         </div>
 
         <!-- The write-up -->
@@ -1032,11 +1033,11 @@ if (document.querySelectorAll('.counter')[0]) {
                 <p><strong>Index page.</strong> The hero leads with the offer itself: a big “85% Off Premium Hosting | From $1.99/mo”, the promo price next to the crossed-out regular one, a small, low-key “Excl. VAT” note, and a couple of urgency cues like the announcement bar and the “Now 85% Off” label. Further down, I kept SiteGround’s usual product overview but reskinned it in the theme, so the home page stays familiar even though it’s clearly on sale.</p>
                 <p><strong>WordPress sales page.</strong> The header repeats the same “85% Off WordPress Hosting | From $1.99/mo” line. All three plan cards (StartUp, GrowBig as Best Value, and GoGeek) show the regular price crossed out next to the promo price, a Save 85% badge, the renewal note and the VAT line. The original layout is all still there, just dressed in the Black Friday look.</p>
                 <p><strong>Email template.</strong> I built the email around the copy from the brief and kept it in the same visual world: a dark, eye-catching header with the 85% on it, the teal accents, and clear CTA buttons. It’s a single column so it holds up across the main email clients, and the key message, the price and the main button all sit in the top third, so the offer comes through even in a preview.</p>
-                <p><strong>Banner set.</strong> Every size uses the same order of elements (logo, 85%, the offer and price, then a clear CTA), just squeezed to fit. On the smallest one, the 320×50, I cut it down to the essentials so the discount and the starting price still register at a glance.</p>
+                <p><strong>Banner set.</strong> Every size uses the same order of elements (logo, 85%, the offer and price, then a clear CTA), just squeezed to fit. On the smallest one, the 320x50, I cut it down to the essentials so the discount and the starting price still register at a glance.</p>
             </section>
             <section class="ad-block">
                 <h2>The constants</h2>
-                <p>A few things stay the same across the whole campaign. Both prices are always visible, with the promo price clearly in front. The VAT note is there but quiet. And the brand cues — the logo, Poppins and the green thread — hold the set together. The result is a campaign that feels bold and current for Black Friday but still reads as SiteGround the whole way through.</p>
+                <p>A few things stay the same across the whole campaign. Both prices are always visible, with the promo price clearly in front. The VAT note is there but quiet. And the brand cues, the logo, Poppins and the green thread, hold the set together. The result is a campaign that feels bold and current for Black Friday but still reads as SiteGround the whole way through.</p>
             </section>
         </div>
 
