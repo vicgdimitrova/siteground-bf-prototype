@@ -345,19 +345,19 @@ section.about-design{
     height:auto;                 /* override the bundle .hero{height:100vh} so nothing is clipped */
     display:flex; align-items:stretch;
     background:#000 url("assets/Background_Index.jpg") center center / cover no-repeat;
-    padding-block:clamp(1.5rem,1.9vh,2.4rem);
+    padding-block:clamp(1.7rem,2.1vh,2.8rem);
 }
 section.about-design .fit-wide{ width:100%; }
 .about-design__inner{
     display:flex; flex-direction:column;
-    gap:clamp(1.1rem,1.6vh,1.8rem);
-    margin:auto 0; width:100%;
+    gap:clamp(1.05rem,1.5vh,1.8rem);
+    margin:auto; width:100%;        /* margin:auto centres the block both ways (don't use 'auto 0') */
 }
 
 /* ---------- Intro ---------- */
 .about-design__intro{
-    display:flex; flex-direction:column; align-items:center; gap:.6rem;
-    text-align:center; max-width:92rem; margin-inline:auto;
+    display:flex; flex-direction:column; align-items:center; gap:.65rem;
+    text-align:center; max-width:96rem; margin-inline:auto;
 }
 .about-design__badge{
     display:inline-flex; align-items:center; padding:.5rem 1.4rem; border-radius:.6rem;
@@ -369,52 +369,32 @@ section.about-design .fit-wide{ width:100%; }
 .about-design__title{
     margin:0; font-family:Poppins,Arial,sans-serif; font-weight:800;
     color:var(--bf-mint); line-height:1.05; letter-spacing:-.01em;
-    font-size:clamp(2.1rem,2.4vw,3.2rem);
+    font-size:clamp(2.3rem,2.6vw,3.6rem);
 }
 .about-design__title span{ color:#fff; }
 .about-design__lead{
-    margin:0; max-width:96rem;
-    color:rgba(255,255,255,.86); font-family:Inter,Arial,sans-serif; line-height:1.5;
-    font-size:clamp(1.25rem,1.1vw,1.5rem);
+    margin:0; max-width:100rem;
+    color:rgba(255,255,255,.88); font-family:Inter,Arial,sans-serif; line-height:1.5;
+    font-size:clamp(1.35rem,1.15vw,1.6rem);
 }
 
 /* ---------- Body: multi-column essay ---------- */
 .about-design__body{
-    column-count:4; column-gap:clamp(1.8rem,2.2vw,2.8rem);
-    color:rgba(255,255,255,.82);
+    column-count:4; column-gap:clamp(2rem,2.4vw,3rem);
+    color:rgba(255,255,255,.84);
 }
 .ad-block{ margin:0 0 .8rem; }
 .ad-block h2{
-    margin:0 0 .3rem; font-family:Poppins,Arial,sans-serif; font-weight:700;
+    margin:0 0 .35rem; font-family:Poppins,Arial,sans-serif; font-weight:700;
     color:var(--bf-mint); text-transform:uppercase; letter-spacing:.05em; line-height:1.2;
-    font-size:clamp(1.1rem,.95vw,1.25rem); break-after:avoid;
+    font-size:clamp(1.2rem,1vw,1.4rem); break-after:avoid;
 }
 .ad-block p{
     margin:0 0 .45rem; font-family:Inter,Arial,sans-serif;
-    font-size:clamp(1.1rem,.88vw,1.2rem); line-height:1.43; break-inside:avoid;
+    font-size:clamp(1.15rem,.9vw,1.3rem); line-height:1.44; break-inside:avoid;
 }
 .ad-block p:last-child{ margin-bottom:0; }
 .ad-block p strong{ color:#fff; font-weight:600; }
-
-/* ---------- Gallery: campaign deliverables ---------- */
-.about-design__gallery{
-    display:flex; justify-content:center; align-items:flex-end;
-    gap:clamp(1.4rem,2vw,2.8rem); flex-wrap:wrap;
-}
-.ad-shot{ margin:0; display:flex; flex-direction:column; align-items:center; gap:.6rem; }
-.ad-shot img{
-    display:block; width:auto; max-width:100%;
-    max-height:clamp(12rem,17vh,16rem);
-    border-radius:1rem; border:1px solid rgba(255,255,255,.16);
-    box-shadow:0 1.4rem 3.2rem rgba(0,0,0,.5);
-}
-.ad-shot figcaption{
-    font-family:Inter,Arial,sans-serif; letter-spacing:.03em; text-transform:uppercase;
-    font-size:clamp(.95rem,.82vw,1.15rem); color:rgba(255,255,255,.6);
-}
-.ad-shot--banner{ transform:rotate(-1.6deg); }
-.ad-shot--sky{ transform:rotate(1.4deg); }
-.ad-shot--email{ transform:rotate(-1deg); }
 
 /* ---------- Responsive ---------- */
 @media (max-width:1400px){
@@ -426,9 +406,6 @@ section.about-design .fit-wide{ width:100%; }
 }
 @media (max-width:600px){
     .about-design__body{ column-count:1; }
-    .about-design__gallery{ align-items:center; }
-    .ad-shot img{ max-height:none; width:min(82vw,32rem); }
-    .ad-shot--banner,.ad-shot--sky,.ad-shot--email{ transform:none; }
 }
 </style>
 <!-- ===== Website Services (section 2) — new BF design, scoped to #website-services ===== -->
@@ -1061,22 +1038,6 @@ if (document.querySelectorAll('.counter')[0]) {
                 <h2>The constants</h2>
                 <p>A few things stay the same across the whole campaign. Both prices are always visible, with the promo price clearly in front. The VAT note is there but quiet. And the brand cues — the logo, Poppins and the green thread — hold the set together. The result is a campaign that feels bold and current for Black Friday but still reads as SiteGround the whole way through.</p>
             </section>
-        </div>
-
-        <!-- The deliverables -->
-        <div class="about-design__gallery" aria-label="Campaign deliverables">
-            <figure class="ad-shot ad-shot--banner">
-                <img loading="lazy" src="assets/SiteGround_BF_Banner_300x250px.png" alt="Black Friday display banner, 300×250, with the SiteGround logo, BLACK FRIDAY headline, 85% mark and a Get Now button.">
-                <figcaption>Display · 300×250</figcaption>
-            </figure>
-            <figure class="ad-shot ad-shot--sky">
-                <img loading="lazy" src="assets/SiteGround_BF_Banner_300x600px.png" alt="Black Friday skyscraper banner, 300×600, with the 85% mark, offer and starting price.">
-                <figcaption>Skyscraper · 300×600</figcaption>
-            </figure>
-            <figure class="ad-shot ad-shot--email">
-                <img loading="lazy" src="assets/SiteGround_BF_Email_Template_DESKTOP_600x1600px.png" alt="Black Friday email template with the 85% header, offer copy, feature list and a View Plans button.">
-                <figcaption>Email template</figcaption>
-            </figure>
         </div>
 
     </div>
