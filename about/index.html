@@ -6,7 +6,7 @@
     
         <link rel="stylesheet" type="text/css" href="assets/a2539b7-2441a45.css">
     
-	            <title>Web Hosting Perfected - SiteGround</title>
+	            <title>About the Design — SiteGround Black Friday</title>
         <script>
 window.uetq = window.uetq || [];
 window.uetq.push('consent', 'default',
@@ -333,6 +333,104 @@ section.bf-hero .bf-hero__subtitle{
 }
 .promobars .promobars__link__text strong{ font-weight:700; color:#000; }
 </style>
+<!-- ===== About THE DESIGN — case-study hero, scoped to section.about-design ===== -->
+<style id="about-design-styles">
+section.about-design{
+    --bf-mint:#02ECBE;
+    --bf-purple:#8800FF;
+    --bf-badge:rgba(166,255,237,0.7);
+    position:relative;
+    /* fill the area below the promo bar (45px) + header (80px); grow if content is taller */
+    min-height:calc(100vh - 12.5rem);
+    height:auto;                 /* override the bundle .hero{height:100vh} so nothing is clipped */
+    display:flex; align-items:stretch;
+    background:#000 url("assets/Background_Index.jpg") center center / cover no-repeat;
+    padding-block:clamp(1.5rem,1.9vh,2.4rem);
+}
+section.about-design .fit-wide{ width:100%; }
+.about-design__inner{
+    display:flex; flex-direction:column;
+    gap:clamp(1.1rem,1.6vh,1.8rem);
+    margin:auto 0; width:100%;
+}
+
+/* ---------- Intro ---------- */
+.about-design__intro{
+    display:flex; flex-direction:column; align-items:center; gap:.6rem;
+    text-align:center; max-width:92rem; margin-inline:auto;
+}
+.about-design__badge{
+    display:inline-flex; align-items:center; padding:.5rem 1.4rem; border-radius:.6rem;
+    background:var(--bf-badge); color:#000;
+    font-family:Poppins,Arial,sans-serif; font-weight:700; text-transform:uppercase;
+    font-size:clamp(1.05rem,.9vw,1.3rem); letter-spacing:.06em;
+    -webkit-backdrop-filter:blur(12px); backdrop-filter:blur(12px);
+}
+.about-design__title{
+    margin:0; font-family:Poppins,Arial,sans-serif; font-weight:800;
+    color:var(--bf-mint); line-height:1.05; letter-spacing:-.01em;
+    font-size:clamp(2.1rem,2.4vw,3.2rem);
+}
+.about-design__title span{ color:#fff; }
+.about-design__lead{
+    margin:0; max-width:96rem;
+    color:rgba(255,255,255,.86); font-family:Inter,Arial,sans-serif; line-height:1.5;
+    font-size:clamp(1.25rem,1.1vw,1.5rem);
+}
+
+/* ---------- Body: multi-column essay ---------- */
+.about-design__body{
+    column-count:4; column-gap:clamp(1.8rem,2.2vw,2.8rem);
+    color:rgba(255,255,255,.82);
+}
+.ad-block{ margin:0 0 .8rem; }
+.ad-block h2{
+    margin:0 0 .3rem; font-family:Poppins,Arial,sans-serif; font-weight:700;
+    color:var(--bf-mint); text-transform:uppercase; letter-spacing:.05em; line-height:1.2;
+    font-size:clamp(1.1rem,.95vw,1.25rem); break-after:avoid;
+}
+.ad-block p{
+    margin:0 0 .45rem; font-family:Inter,Arial,sans-serif;
+    font-size:clamp(1.1rem,.88vw,1.2rem); line-height:1.43; break-inside:avoid;
+}
+.ad-block p:last-child{ margin-bottom:0; }
+.ad-block p strong{ color:#fff; font-weight:600; }
+
+/* ---------- Gallery: campaign deliverables ---------- */
+.about-design__gallery{
+    display:flex; justify-content:center; align-items:flex-end;
+    gap:clamp(1.4rem,2vw,2.8rem); flex-wrap:wrap;
+}
+.ad-shot{ margin:0; display:flex; flex-direction:column; align-items:center; gap:.6rem; }
+.ad-shot img{
+    display:block; width:auto; max-width:100%;
+    max-height:clamp(12rem,17vh,16rem);
+    border-radius:1rem; border:1px solid rgba(255,255,255,.16);
+    box-shadow:0 1.4rem 3.2rem rgba(0,0,0,.5);
+}
+.ad-shot figcaption{
+    font-family:Inter,Arial,sans-serif; letter-spacing:.03em; text-transform:uppercase;
+    font-size:clamp(.95rem,.82vw,1.15rem); color:rgba(255,255,255,.6);
+}
+.ad-shot--banner{ transform:rotate(-1.6deg); }
+.ad-shot--sky{ transform:rotate(1.4deg); }
+.ad-shot--email{ transform:rotate(-1deg); }
+
+/* ---------- Responsive ---------- */
+@media (max-width:1400px){
+    .about-design__body{ column-count:3; }
+}
+@media (max-width:1024px){
+    section.about-design{ min-height:auto; }
+    .about-design__body{ column-count:2; }
+}
+@media (max-width:600px){
+    .about-design__body{ column-count:1; }
+    .about-design__gallery{ align-items:center; }
+    .ad-shot img{ max-height:none; width:min(82vw,32rem); }
+    .ad-shot--banner,.ad-shot--sky,.ad-shot--email{ transform:none; }
+}
+</style>
 <!-- ===== Website Services (section 2) — new BF design, scoped to #website-services ===== -->
 <style id="ws-section-styles">
 #website-services, #website-services *{ box-sizing:border-box; }
@@ -428,7 +526,7 @@ section.bf-hero .bf-hero__subtitle{
 
 		<!-- Promo Lenta Banner -->
     <section class="promobars bg--color-green-promo" role="region" aria-label="Promo lenta banner region">
-        <a class="promobars__link flex flex--justify-center flex--align-center flex--gap-2xs text--color-pri-darkest" href="wordpress/">
+        <a class="promobars__link flex flex--justify-center flex--align-center flex--gap-2xs text--color-pri-darkest" href="../wordpress/">
             <p class="promobars__link__text text--color-pri-darkest promobars__link__text--center">
                 <strong>BLACK FRIDAY</strong> - 85% Off WordPress Hosting
             </p>
@@ -459,7 +557,7 @@ if (document.querySelectorAll('.counter')[0]) {
 			</label>
 
 			<div class="header-logo">
-				<a id="logo" href="#hero" title="SiteGround">
+				<a id="logo" href="../index.html" title="SiteGround">
 					<span class="header__logo-size sg-icon" data-icon="/logos/sg_black"><svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 286.196 58.061"><title>SiteGround</title><path d="M91.1,38.856C86.762,31.638,77.04,35.768,79.118,44.1c2.787,11.179,16.4,13.857,21.416,23.824,2.754,5.473,1.029,10.945-3.186,13.347-4.323,2.463-11.629,3.438-16.117.146-2.25-1.65-2.063-2.895-3.25.209-.382,1-1.017,2.1-2.254,1.044-1.948-1.655-1.908-6.907,1.374-9.142,2.092-1.116,3.511-.527,5.448,1.389,4.7,3.863,10.684,2.715,12.233-.483,1-2.057-.008-5.274-2.006-7.519-2.891-3.248-7.448-6.047-11.2-10.429-4.948-5.779-8.721-12.247-6.254-18.619,2.146-5.545,8.312-10.651,15.59-6.968,4.3,2.176,8.5,7.146,6.091,12.078-1.659,3.4-6.794,4.494-9.167.974-1.431-2.123,4.468-3.132,3.267-5.095Z" transform="translate(-28.139 -27.968)" fill="#333230" fill-rule="evenodd"></path><path d="M110.1,50.494c.2,6.15-6.787,5.673-6.975-.23a3.082,3.082,0,0,1,3.511-3.293,4.1,4.1,0,0,1,2.223,1.038,3.454,3.454,0,0,1,1.241,2.485Z" transform="translate(-28.139 -27.968)" fill="#333230" fill-rule="evenodd"></path><path d="M103.66,64.227c-.1.062-.2.121-.3.175-2.966,1.655-2.073-1.724-.476-3.714,1.611-2.009,2.964-2.757,4.216-2.583a2.4,2.4,0,0,1,2.172,1.779c.807,3.9-3.585,14.836,1.06,17.719a2,2,0,0,0,2.676-.437c.873-1.016.992-2.678,2.084-3.009.491-.148.9.061,1.078,1.365.325,3.924-1.425,9.535-6.772,7.612-4.759-2.165-4.552-11.262-4.534-16.251,0-.339-.126-3.323-1.208-2.656Z" transform="translate(-28.139 -27.968)" fill="#333230" fill-rule="evenodd"></path><path d="M138.106,57.471a2.308,2.308,0,0,0-2.268-1.647c-2.622.207-3.133.1-5.585.25s-4.549.251-6.295.315q.512-4.5,1.025-9,1.422-13.08.127-16.1Q124.132,29,121.977,29.5c-2.237.414-2.769,4.274-3.015,11.53a156.661,156.661,0,0,0,.785,16.128c-.535.131-2.165.6-3.237.922a12.8,12.8,0,0,0-2.561,1.007,1.138,1.138,0,0,0-.547,1.141,5.284,5.284,0,0,0,.492,2.015q1.294,3.024,4.01,9.187t3.657,8.371q1.644,3.838,4.263,3.742,2.109-.078,2.517-.59t-.429-2.474A43.241,43.241,0,0,1,124.82,69.8a71.063,71.063,0,0,1-.448-8.385c5.467-1.257,9.218-.921,12.359-1.755l.163-.058c1.212-.762.542-.368.962-.825A1.019,1.019,0,0,0,138.106,57.471ZM121.62,74.506l-.158.2-.251.011s-.116-.229-.445-.909-1.553-5.051-1.62-5.126-1.148-4.115-1.273-4.54a1.261,1.261,0,0,1-.036-.707,1.732,1.732,0,0,1,.414-.571,5.8,5.8,0,0,1,1.339-.578l.211-.011.185.345.127.861.317,2.147L121.4,71.8l.327,2.345Z" transform="translate(-28.139 -27.968)" fill="#333230"></path><path d="M157.21,76.625c-3.386,4.232-8.157,8.077-13.545,6.556-3.067-1.091-5.059-4.1-6.052-7.772a23.972,23.972,0,0,1-.206-11.012c1.217-5.574,4.585-10.155,8.521-10.2,7.4.739,11.178,8.919,7.408,14.689-2.1,3.21-6.45,4.845-8.56,5.856-.8.383-1.43.56-1.322,2.121.254,3.747,6.6,3.687,10.594-4.573.368-.76,2.865-4.039,4.493-3.055,3.413,2.064-.913,6.871-1.331,7.392Zm-15.52-5.144c4.443-1.421,8.082-5.264,8.414-7.366.626-3.972-5.455-7.385-7.7-.873-.572,1.66-.728,5.324-.713,8.239Z" transform="translate(-28.139 -27.968)" fill="#333230" fill-rule="evenodd"></path><path d="M187.032,62.019c-.324,3.338,4.724,20.6,1.093,20.9-2.14.175-3.455.4-4.017-.753-.533-1.1,1.572-9.982-.156-7.287-.4.618-.321.668-.959,1.813-5.95,10.64-14.019,7.811-18.711-.843a35.669,35.669,0,0,1-3.614-20.221c1.281-12.345,6.579-28.529,19.038-25.871,9.789,2.089,3.048,15.176-.373,11.831C171.247,23.872,155.122,66.66,172.963,77c5.153,2.986,9.557-6.747,8.5-11.031-.74-3.009-.914-3.114-2.41-2.665-1.162.35-5.147,3.765-6.26,2.733-1.394-1.293-2.147-6.38.647-6.528,3.232-.168,5.064.881,8.883-3.732,3.47-4.193,6.3-2.941,5.7,1.6-.262,1.987-.846,3.12-.994,4.646Z" transform="translate(-28.139 -27.968)" fill="#333230" fill-rule="evenodd"></path><path d="M209.961,55.677a15.848,15.848,0,0,0-10.154-2.986c-5.432.563-10.455,4.217-9.939,9.926.22,2.437.466,12.842,1.394,17.119a3.967,3.967,0,0,0,2.6,3.215A3.071,3.071,0,0,0,197.6,81.4c.893-2.09-.092-4.028-.6-5.8a71.6,71.6,0,0,1-1.787-11.717c-.6-6.374,9.061-7.247,11.342-3.538-1.64,2.536.736,4.13,3.709,1.827,2.684-2.08,1.608-5.017-.3-6.492Z" transform="translate(-28.139 -27.968)" fill="#333230" fill-rule="evenodd"></path><path d="M223.158,83.511c13.371-2.255,18.513-23.046,1.929-30.139-17.253-5.589-18.143,33.538-1.929,30.139Zm-6.067-16.767c1.567-16.333,12.313-8.735,13.7,1.907,1.375,10.546-16,16.864-13.7-1.907Z" transform="translate(-28.139 -27.968)" fill="#333230" fill-rule="evenodd"></path><path d="M242.449,62.158c-2.065,4.639-1.252,23.247,8.343,14.431,2.092-1.923,2.358-8.1,1.575-13.384-.182-1.219-1.211-4.929-1.557-6.047-.439-1.425.746-3.416,2.549-4.024a3.1,3.1,0,0,1,3.713,1.818c1,2.383.342,6.289.234,7.888-.318,4.769-1.1,10.638.6,13.723.724,1.318,1.726,1.451,1.761,2.433.127,3.511-4.05,5.76-5.638,3.581-.424-.581-.073-1.541-.719-1.972-7.889,7.083-16.578,1.529-16.445-8.616.029-2.218-.28-5.837.523-8.976.625-2.443,1.022-4.77,2.3-6.092,1.672-1.208,2.535-.482,3.068-.084,1.172.88.293,3.654-.306,5.321Z" transform="translate(-28.139 -27.968)" fill="#333230" fill-rule="evenodd"></path><path d="M277.724,77.979c1.406-4.784,3.053-12.593,2-15.483-1.576-4.33-7.58-5.918-10.543-1.487-1.818,2.718-1.867,12.447.447,18.14.553,1.361-.474,3.259-2.228,3.838-6.6,2.185-1.471-16.109-5.324-21.954-.83-1.257-1.842-1.382-1.955-2.321-.407-3.35,3.591-5.5,5.351-3.417.469.556.193,1.47.871,1.883,7.322-6.759,18.219-1.679,18.889,8a41,41,0,0,1-2.576,14.79,10.327,10.327,0,0,1-1.76,3.008,2.251,2.251,0,0,1-3.059.078c-1.24-.839-.582-3.484-.115-5.076Z" transform="translate(-28.139 -27.968)" fill="#333230" fill-rule="evenodd"></path><path d="M306.808,56.687c.623-5.243-1.574-20.48-5.6-20.864-1.084-.1-1.34-2.746-.6-4.314s2.48-2.065,5.381-.867c4.646,1.92,5,19.376,5.094,24.635.089,5.054-.157,11.321.617,16.109a17.892,17.892,0,0,0,1.318,4.446c.846,1.918,1.69,3.247,1.145,4.333-1.18,2.35-4.778,3.27-6,2.11-.848-.807-1.223-2.264-1.438-3.974-6.941,11.049-17.957,2.356-19.514-8.27-1.5-10.252,7.834-22.152,19.6-13.344ZM295.962,77.041c8.711,6.311,11.461-10.042,7.12-16.1-5.323-7.426-18.8,6.99-7.12,16.1Z" transform="translate(-28.139 -27.968)" fill="#333230" fill-rule="evenodd"></path><path d="M41.355,73.31c-6.813-2.228-11.674-8.847-12.866-15.783C25.2,38.382,45.575,21.108,65.924,30.7c.241,4.3-1.756,10.419-7.236,12.258,27.2,17.172,3.945,52.349-24.56,40.782-5.2-2.652-2.424-7.5,3.136-4.692,6.209,2.141,14.277,2.141,19.361-.666A23,23,0,0,0,64.9,71.009a23.913,23.913,0,0,0,1.963-3.63c.431-1.015,1.82-5.2.742-5.657-.27-.113-.412.207-.486.507a17.755,17.755,0,0,1-3.9,7.356,19.676,19.676,0,0,1-8.4,5.749c-4.065,1.481-8.776,1.668-15.254.251.428-.463,1.286-1.751,1.784-2.275ZM60.133,32.42a13.311,13.311,0,0,1,.184,1.895,9.005,9.005,0,0,1-3.006,7.468c-.457.458-.977.934-1.555,1.428,7.682,4.776,11.694,15.221,7.235,22.521-6.018,9.836-17.944,7.6-24.458.865-6.821-7.05-5.917-16.172-1.018-22.933A28.414,28.414,0,0,1,60.133,32.42Z" transform="translate(-28.139 -27.968)" fill="#96cb4c" fill-rule="evenodd"></path><path d="M36.981,54.013c1.462-14.6,18.258-17.49,24.5,1.967,5.037,20-26.819,15.647-24.5-1.967Zm13.7,9.6c13.264.484,6.908-13.081-1.8-16.079-8.631-2.971-13.43,16.078,1.8,16.079Z" transform="translate(-28.139 -27.968)" fill="#333230" fill-rule="evenodd"></path></svg></span>
 									</a>
 			</div>
@@ -492,7 +590,7 @@ if (document.querySelectorAll('.counter')[0]) {
 							</a>
 						</li>
                         <li>
-                            <a class="flex" href="wordpress/" title="For WordPress">
+                            <a class="flex" href="../wordpress/" title="For WordPress">
                                 <div class="flex flex--gap-s flex--align-center">
                                     <span aria-hidden="true" class="desktop-icon sg-icon sg-icon--size_40 sg-icon--color-pri-darkest" data-icon="icons/material/icon_wordpress"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
     <path d="M12 2C6.48571 2 2 6.48571 2 12C2 17.5143 6.48571 22 12 22C17.5143 22 22 17.5132 22 12C22 6.48677 17.5132 2 12 2ZM3.00952 12C3.00952 10.6963 3.28889 9.45926 3.78836 8.34074L8.07725 20.091C5.07831 18.6339 3.00952 15.5587 3.00952 12ZM12 20.9915C11.1175 20.9915 10.2656 20.8624 9.46032 20.6254L12.1577 12.7873L14.9206 20.3587C14.9386 20.4032 14.9608 20.4444 14.9852 20.4825C14.0508 20.8116 13.0466 20.9926 12 20.9926V20.9915ZM13.2392 7.78413C13.7799 7.75556 14.2677 7.69841 14.2677 7.69841C14.7524 7.64127 14.6952 6.9291 14.2106 6.95767C14.2106 6.95767 12.7545 7.07196 11.8138 7.07196C10.9302 7.07196 9.4455 6.95767 9.4455 6.95767C8.96085 6.9291 8.9037 7.66984 9.38836 7.69841C9.38836 7.69841 9.84656 7.75556 10.3312 7.78413L11.7323 11.6222L9.76402 17.5227L6.48995 7.78413C7.03175 7.75556 7.51852 7.69841 7.51852 7.69841C8.00317 7.64127 7.94497 6.9291 7.46138 6.95767C7.46138 6.95767 6.00529 7.07196 5.06561 7.07196C4.89735 7.07196 4.69841 7.06772 4.48677 7.06138C6.09524 4.62116 8.85926 3.00952 12 3.00952C14.3407 3.00952 16.472 3.90476 18.0709 5.37037C18.0317 5.36825 17.9947 5.36296 17.9545 5.36296C17.0709 5.36296 16.4444 6.13228 16.4444 6.95873C16.4444 7.69947 16.872 8.32698 17.328 9.06773C17.6698 9.66667 18.0688 10.436 18.0688 11.5471C18.0688 12.3164 17.7725 13.2095 17.3852 14.454L16.4878 17.4497L13.2392 7.78518V7.78413ZM19.8889 7.68677C20.5905 8.9672 20.9905 10.437 20.9905 12C20.9905 15.3175 19.1926 18.2127 16.5196 19.7714L19.2656 11.8317C19.7788 10.5492 19.9492 9.52381 19.9492 8.61164C19.9492 8.28042 19.927 7.97355 19.8889 7.68677Z"></path>
@@ -577,7 +675,7 @@ if (document.querySelectorAll('.counter')[0]) {
                     <div class="wrap wrap--w-860 grid grid--lg-2 grid--gap-2xl">
                         <ul class="standard-dropdown grid">
                             <li>
-                                <a class="flex" href="wordpress/" title="For WordPress">
+                                <a class="flex" href="../wordpress/" title="For WordPress">
                                     <div class="flex flex--gap-s flex--align-center">
                                         <span aria-hidden="true" class="desktop-icon sg-icon sg-icon--size_40 sg-icon--color-pri-darkest" data-icon="icons/material/icon_wordpress"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
     <path d="M12 2C6.48571 2 2 6.48571 2 12C2 17.5143 6.48571 22 12 22C17.5143 22 22 17.5132 22 12C22 6.48677 17.5132 2 12 2ZM3.00952 12C3.00952 10.6963 3.28889 9.45926 3.78836 8.34074L8.07725 20.091C5.07831 18.6339 3.00952 15.5587 3.00952 12ZM12 20.9915C11.1175 20.9915 10.2656 20.8624 9.46032 20.6254L12.1577 12.7873L14.9206 20.3587C14.9386 20.4032 14.9608 20.4444 14.9852 20.4825C14.0508 20.8116 13.0466 20.9926 12 20.9926V20.9915ZM13.2392 7.78413C13.7799 7.75556 14.2677 7.69841 14.2677 7.69841C14.7524 7.64127 14.6952 6.9291 14.2106 6.95767C14.2106 6.95767 12.7545 7.07196 11.8138 7.07196C10.9302 7.07196 9.4455 6.95767 9.4455 6.95767C8.96085 6.9291 8.9037 7.66984 9.38836 7.69841C9.38836 7.69841 9.84656 7.75556 10.3312 7.78413L11.7323 11.6222L9.76402 17.5227L6.48995 7.78413C7.03175 7.75556 7.51852 7.69841 7.51852 7.69841C8.00317 7.64127 7.94497 6.9291 7.46138 6.95767C7.46138 6.95767 6.00529 7.07196 5.06561 7.07196C4.89735 7.07196 4.69841 7.06772 4.48677 7.06138C6.09524 4.62116 8.85926 3.00952 12 3.00952C14.3407 3.00952 16.472 3.90476 18.0709 5.37037C18.0317 5.36825 17.9947 5.36296 17.9545 5.36296C17.0709 5.36296 16.4444 6.13228 16.4444 6.95873C16.4444 7.69947 16.872 8.32698 17.328 9.06773C17.6698 9.66667 18.0688 10.436 18.0688 11.5471C18.0688 12.3164 17.7725 13.2095 17.3852 14.454L16.4878 17.4497L13.2392 7.78518V7.78413ZM19.8889 7.68677C20.5905 8.9672 20.9905 10.437 20.9905 12C20.9905 15.3175 19.1926 18.2127 16.5196 19.7714L19.2656 11.8317C19.7788 10.5492 19.9492 9.52381 19.9492 8.61164C19.9492 8.28042 19.927 7.97355 19.8889 7.68677Z"></path>
@@ -763,7 +861,7 @@ if (document.querySelectorAll('.counter')[0]) {
                     <div class="wrap wrap--w-860 grid grid--lg-2 grid--gap-2xl">
                         <ul class="standard-dropdown grid">
                             <li>
-                                <a class="flex" href="about/" title="About THE DESIGN">
+                                <a class="flex" href="#" title="About THE DESIGN">
                                     <div class="flex flex--gap-s flex--align-center">
                                         <span aria-hidden="true" class="desktop-icon sg-icon sg-icon--size_40 sg-icon--color-pri-darkest" data-icon="icons/material/icon_info"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 -960 960 960">
     <path d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"></path>
@@ -835,7 +933,7 @@ if (document.querySelectorAll('.counter')[0]) {
                     <div class="wrap wrap--w-860 grid grid--lg-2 grid--gap-2xl">
                         <ul class="standard-dropdown grid flex--align-content-start">
                             <li>
-                                <a class="flex" href="about/" title="About THE DESIGN">
+                                <a class="flex" href="#" title="About THE DESIGN">
                                     <div class="flex flex--gap-s flex--align-center">
                                         <span aria-hidden="true" class="desktop-icon sg-icon sg-icon--size_40 sg-icon--color-pri-darkest" data-icon="icons/material/icon_info"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 -960 960 960">
     <path d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"></path>
@@ -923,792 +1021,70 @@ if (document.querySelectorAll('.counter')[0]) {
 	</header>
 		<main class="wrapper" id="main-content">
 			<!-- ===== Black Friday Hero (replaces original hero) ===== -->
-<section id="hero" class="hero full-bleed bf-hero">
-    <div class="fit-wide bf-hero__inner">
+<!-- ===== About THE DESIGN — case-study hero (essay + campaign deliverables) ===== -->
+<section id="hero" class="hero full-bleed about-design">
+    <div class="fit-wide about-design__inner">
 
-        <!-- Left: promo copy -->
-        <div class="bf-hero__copy">
-            <span class="bf-hero__badge">Now 85% Off</span>
-
-            <div class="bf-hero__head">
-                <h1 class="bf-hero__title" aria-label="Black Friday">
-                    <span class="bf-hero__title-row bf-hero__title-row--spread" aria-hidden="true"><span>B</span><span>L</span><span>A</span><span>C</span><span>K</span></span>
-                    <span class="bf-hero__title-row" aria-hidden="true">FRIDAY</span>
-                </h1>
-                <p class="bf-hero__subtitle">85% Off Premium Hosting</p>
-            </div>
-
-            <div class="bf-hero__pricing">
-                <p class="bf-hero__price">
-                    <span class="bf-hero__price-from">From</span>
-                    <span class="bf-hero__price-amount">$1.99</span>
-                    <span class="bf-hero__price-period">/mo.</span>
-                </p>
-                <p class="bf-hero__regular">
-                    Regular <s>$17.99/mo.</s><span class="bf-hero__excl">Excl. VAT</span>
-                </p>
-            </div>
+        <!-- Intro -->
+        <div class="about-design__intro">
+            <span class="about-design__badge">Case study</span>
+            <h1 class="about-design__title">Black Friday Campaign — <span>Design Rationale</span></h1>
+            <p class="about-design__lead">A short walkthrough of the thinking behind the campaign: how each piece carries the offer, and how the bold, festive look still reads as SiteGround.</p>
         </div>
 
-        <!-- Right: glass 85% showpiece -->
-        <div class="bf-hero__visual" aria-hidden="true">
-            <span class="bf-hero__glasswrap">
-                <span class="bf-hero__glass">85</span>
-                <span class="bf-hero__pct">%</span>
-            </span>
+        <!-- The write-up -->
+        <div class="about-design__body">
+            <section class="ad-block">
+                <h2>Approach &amp; inspiration</h2>
+                <p>Before I started designing, I went back through SiteGround’s past Black Friday campaigns to see how the brand usually handles the season. The same approach kept coming up: bold layouts on dark, themed backgrounds, lifted by punchy accent colours that aren’t part of the everyday palette. I wanted my work to sit comfortably next to those, so I leaned into the same direction. The goal was to make this feel like the next SiteGround Black Friday, not something that came out of nowhere.</p>
+            </section>
+            <section class="ad-block">
+                <h2>The visual foundation</h2>
+                <p>Everything in the campaign is built on a background I made myself in Photoshop. I drew the shapes by hand and then worked them into a texture that feels dynamic and current. To keep the set varied without it falling apart, I used one consistent style across all of it, but gave each surface its own version of the image. That way the pages and assets clearly belong together, while none of them feels like a copy of the last. I was after something artistic but still clean, never busy.</p>
+            </section>
+            <section class="ad-block">
+                <h2>Staying true to SiteGround</h2>
+                <p>A themed campaign still has to hold on to the brand, so I was careful about what stayed fixed. The logo and the Poppins typography are untouched. For the accent, I went with a green/turquoise that sits close to one of SiteGround’s brand greens, and used it for the promo announcement bar, the main messaging, the labels and the buttons. That one colour carries a lot of the connection. It brings the Black Friday energy while keeping everything tied back to SiteGround, so the campaign and the regular site still feel like the same brand.</p>
+            </section>
+            <section class="ad-block">
+                <h2>85% as the hero</h2>
+                <p>The brief is clear that the discount is the most important message, so I made the 85% the lead visual on every piece. I gave it a mirror effect for two reasons. It’s a strong, current design trend, and it’s also something SiteGround already uses on its own site, which keeps the campaign in step with the live brand instead of pulling away from it. The percentage shows up on the index hero, the sales page, the email and every banner, so wherever someone runs into the campaign, the offer is the first thing they see.</p>
+            </section>
+            <section class="ad-block">
+                <h2>Across the components</h2>
+                <p><strong>Index page.</strong> The hero leads with the offer itself: a big “85% Off Premium Hosting | From $1.99/mo”, the promo price next to the crossed-out regular one, a small, low-key “Excl. VAT” note, and a couple of urgency cues like the announcement bar and the “Now 85% Off” label. Further down, I kept SiteGround’s usual product overview but reskinned it in the theme, so the home page stays familiar even though it’s clearly on sale.</p>
+                <p><strong>WordPress sales page.</strong> The header repeats the same “85% Off WordPress Hosting | From $1.99/mo” line. All three plan cards (StartUp, GrowBig as Best Value, and GoGeek) show the regular price crossed out next to the promo price, a Save 85% badge, the renewal note and the VAT line. The original layout is all still there, just dressed in the Black Friday look.</p>
+                <p><strong>Email template.</strong> I built the email around the copy from the brief and kept it in the same visual world: a dark, eye-catching header with the 85% on it, the teal accents, and clear CTA buttons. It’s a single column so it holds up across the main email clients, and the key message, the price and the main button all sit in the top third, so the offer comes through even in a preview.</p>
+                <p><strong>Banner set.</strong> Every size uses the same order of elements (logo, 85%, the offer and price, then a clear CTA), just squeezed to fit. On the smallest one, the 320×50, I cut it down to the essentials so the discount and the starting price still register at a glance.</p>
+            </section>
+            <section class="ad-block">
+                <h2>The constants</h2>
+                <p>A few things stay the same across the whole campaign. Both prices are always visible, with the promo price clearly in front. The VAT note is there but quiet. And the brand cues — the logo, Poppins and the green thread — hold the set together. The result is a campaign that feels bold and current for Black Friday but still reads as SiteGround the whole way through.</p>
+            </section>
         </div>
 
-        <!-- CTA -->
-        <a href="#website-services" class="bf-hero__cta">
-            <span>View Deal</span>
-        </a>
+        <!-- The deliverables -->
+        <div class="about-design__gallery" aria-label="Campaign deliverables">
+            <figure class="ad-shot ad-shot--banner">
+                <img loading="lazy" src="assets/SiteGround_BF_Banner_300x250px.png" alt="Black Friday display banner, 300×250, with the SiteGround logo, BLACK FRIDAY headline, 85% mark and a Get Now button.">
+                <figcaption>Display · 300×250</figcaption>
+            </figure>
+            <figure class="ad-shot ad-shot--sky">
+                <img loading="lazy" src="assets/SiteGround_BF_Banner_300x600px.png" alt="Black Friday skyscraper banner, 300×600, with the 85% mark, offer and starting price.">
+                <figcaption>Skyscraper · 300×600</figcaption>
+            </figure>
+            <figure class="ad-shot ad-shot--email">
+                <img loading="lazy" src="assets/SiteGround_BF_Email_Template_DESKTOP_600x1600px.png" alt="Black Friday email template with the 85% header, offer copy, feature list and a View Plans button.">
+                <figcaption>Email template</figcaption>
+            </figure>
+        </div>
+
     </div>
 </section>
-<section id="website-services" class="fade-up-section full-bleed bg--color-white">
-    <div class="ws__inner">
-
-        <header class="ws__head">
-            <h2 class="ws__heading">Fast, secure, smarter <br>AI-powered website services</h2>
-            <p class="ws__promo">Now <b>85%</b> Off</p>
-        </header>
-
-        <div class="ws__stage">
-            <span class="ws__watermark" aria-hidden="true">BLACK FRIDAY</span>
-
-            <div class="ws__cards">
-
-                <!-- Card 1: Hosting for WordPress -->
-                <article class="ws__card">
-                    <span class="ws__card-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48571 2 2 6.48571 2 12C2 17.5143 6.48571 22 12 22C17.5143 22 22 17.5132 22 12C22 6.48677 17.5132 2 12 2ZM3.00952 12C3.00952 10.6963 3.28889 9.45926 3.78836 8.34074L8.07725 20.091C5.07831 18.6339 3.00952 15.5587 3.00952 12ZM12 20.9915C11.1175 20.9915 10.2656 20.8624 9.46032 20.6254L12.1577 12.7873L14.9206 20.3587C14.9386 20.4032 14.9608 20.4444 14.9852 20.4825C14.0508 20.8116 13.0466 20.9926 12 20.9926V20.9915ZM13.2392 7.78413C13.7799 7.75556 14.2677 7.69841 14.2677 7.69841C14.7524 7.64127 14.6952 6.9291 14.2106 6.95767C14.2106 6.95767 12.7545 7.07196 11.8138 7.07196C10.9302 7.07196 9.4455 6.95767 9.4455 6.95767C8.96085 6.9291 8.9037 7.66984 9.38836 7.69841C9.38836 7.69841 9.84656 7.75556 10.3312 7.78413L11.7323 11.6222L9.76402 17.5227L6.48995 7.78413C7.03175 7.75556 7.51852 7.69841 7.51852 7.69841C8.00317 7.64127 7.94497 6.9291 7.46138 6.95767C7.46138 6.95767 6.00529 7.07196 5.06561 7.07196C4.89735 7.07196 4.69841 7.06772 4.48677 7.06138C6.09524 4.62116 8.85926 3.00952 12 3.00952C14.3407 3.00952 16.472 3.90476 18.0709 5.37037C18.0317 5.36825 17.9947 5.36296 17.9545 5.36296C17.0709 5.36296 16.4444 6.13228 16.4444 6.95873C16.4444 7.69947 16.872 8.32698 17.328 9.06773C17.6698 9.66667 18.0688 10.436 18.0688 11.5471C18.0688 12.3164 17.7725 13.2095 17.3852 14.454L16.4878 17.4497L13.2392 7.78518V7.78413ZM19.8889 7.68677C20.5905 8.9672 20.9905 10.437 20.9905 12C20.9905 15.3175 19.1926 18.2127 16.5196 19.7714L19.2656 11.8317C19.7788 10.5492 19.9492 9.52381 19.9492 8.61164C19.9492 8.28042 19.927 7.97355 19.8889 7.68677Z"></path></svg>
-                    </span>
-                    <h3 class="ws__card-title">Hosting for WordPress</h3>
-                    <p class="ws__card-desc">Start or migrate WordPress on our ultrafast hosting.</p>
-                    <a class="ws__card-btn" href="wordpress/">
-                        <span>View Plan</span>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"></path></svg>
-                    </a>
-                </article>
-
-                <!-- Card 2: Web Hosting -->
-                <article class="ws__card">
-                    <span class="ws__card-icon" aria-hidden="true">
-                        <svg viewBox="0 -960 960 960" fill="currentColor"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Z"></path></svg>
-                    </span>
-                    <h3 class="ws__card-title">Web Hosting</h3>
-                    <p class="ws__card-desc">Build and grow your site with our fast &amp; reliable hosting.</p>
-                    <a class="ws__card-btn" href="#">
-                        <span>View Plan</span>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"></path></svg>
-                    </a>
-                </article>
-
-                <!-- Card 3: Website Builder -->
-                <article class="ws__card">
-                    <span class="ws__card-icon" aria-hidden="true">
-                        <svg viewBox="0 0 40 40" fill="none">
-                            <rect x="3.5" y="6" width="33" height="28" rx="3.5" stroke="currentColor" stroke-width="2.6"></rect>
-                            <path d="M3.5 13.5h33" stroke="currentColor" stroke-width="2.6"></path>
-                            <circle cx="8.5" cy="9.7" r="1.3" fill="currentColor"></circle>
-                            <circle cx="13" cy="9.7" r="1.3" fill="currentColor"></circle>
-                            <path d="M17.5 28.5l4.7-4.7m.6-3.2a3.4 3.4 0 1 0 4.6 4.6l4.4 4.4-2.1 2.1-4.4-4.4a3.4 3.4 0 0 1-4.6-4.6l2.6 2.6 1.9-1.9-2.6-2.6Z" fill="currentColor"></path>
-                        </svg>
-                    </span>
-                    <h3 class="ws__card-title">Website Builder</h3>
-                    <p class="ws__card-desc">Create a website and get online easily and quickly.</p>
-                    <a class="ws__card-btn" href="#">
-                        <span>View Plan</span>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"></path></svg>
-                    </a>
-                </article>
-
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="fade-up-section full-bleed section--bg">
-    <div class="fit-wide flex flex--direction-column flex--align-center flex--align-content-start-767 flex--gap-5xl">
-        <div class="grid grid--gap-l">
-            <h2 class="fade-up-element title--4xl text--align-center text--color-white text--align-left-767">
-                Secure your domain from just <span class="vatPriceElement">17.99 €</span>/yr.            </h2>
-
-            <div class="tooltip--container flex flex--align-center flex--justify-center grid--gap-row-m grid--gap-column-xl flex--justify-content-start-767">
-                <button class="flex flex--align-center flex--gap-xs flex--flex-wrap-nowrap" data-tooltip="Keep your personal details private in WHOIS databases to prevent spam. Free for the 1st year for domains where Domain Privacy Protection can be added." aria-describedby="tooltip-qyls34g4c">
-                    <span class="sg-icon sg-icon--size_24 sg-icon--color-white" data-icon="icons/material/icon_verified_user"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 -960 960 960">
-    <path d="m438-338 226-226-57-57-169 169-84-84-57 57 141 141Zm42 258q-139-35-229.5-159.5T160-516v-244l320-120 320 120v244q0 152-90.5 276.5T480-80Zm0-84q104-33 172-132t68-220v-189l-240-90-240 90v189q0 121 68 220t172 132Zm0-316Z"></path>
-</svg>
-</span>
-                    <span class="tooltip--text text--size-s text--color-white">
-						1-year Free Domain Privacy					</span>
-                <span class="tooltip is-hidden" id="tooltip-qyls34g4c" style="transform: translate(10px);">Keep your personal details private in WHOIS databases to prevent spam. Free for the 1st year for domains where Domain Privacy Protection can be added.</span></button>
-                <button class="flex flex--align-center flex--gap-xs flex--flex-wrap-nowrap" data-tooltip="Add an extra layer of security and prevent unauthorised users from gaining access to your domain." aria-describedby="tooltip-iyu1w43sa">
-                    <span class="sg-icon sg-icon--size_24 sg-icon--color-white" data-icon="icons/material/icon_lock"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 -960 960 960">
-    <path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z"></path>
-</svg>
-</span>
-                    <span class="tooltip--text text--size-s text--color-white">
-						2-factor Authentication					</span>
-                <span class="tooltip is-hidden" id="tooltip-iyu1w43sa" style="transform: translate(10px);">Add an extra layer of security and prevent unauthorised users from gaining access to your domain.</span></button>
-                <button class="flex flex--align-center flex--gap-xs flex--flex-wrap-nowrap" data-tooltip="Round-the-clock assistance from top-rated domain &amp; hosting specialists with over 20 years of experience." aria-describedby="tooltip-dk0vmmhec">
-                    <span class="sg-icon sg-icon--size_24 sg-icon--color-white" data-icon="icons/material/icon_support"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 -960 960 960">
-    <path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80ZM364-182l48-110q-42-15-72.5-46.5T292-412l-110 46q23 64 71 112t111 72Zm-72-366q17-42 47.5-73.5T412-668l-46-110q-64 24-112 72t-72 112l110 46Zm188 188q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm116 178q63-24 110.5-71.5T778-364l-110-48q-15 42-46 72.5T550-292l46 110Zm72-368 110-46q-24-63-71.5-110.5T596-778l-46 112q41 15 71 45.5t47 70.5Z"></path>
-</svg>
-</span>
-                    <span class="tooltip--text text--size-s text--color-white">
-						24/7 Expert Support					</span>
-                <span class="tooltip is-hidden" id="tooltip-dk0vmmhec" style="transform: translate(10px);">Round-the-clock assistance from top-rated domain &amp; hosting specialists with over 20 years of experience.</span></button>
-            </div>
-        </div>
-
-        <div class="grid grid--gap-xl">
-            <div class="wrap wrap--w-1200 card--mask-40 card--field-wrapper density-w--l density-h--l">
-                <span class="field-wrapper field-wrapper--2xl field-wrapper--addon flex flex--justify-space-between flex--align-center flex--gap-s flex--flex-wrap-nowrap">
-                    <span class="field--addon--component">
-                        <input id="webhostingDomainSearchDomain" class="field" aria-label="Domain search" name="domain_search_field" type="text" data-placeholder="Start with your idea or business name" placeholder="Start with your idea or business name" onfocus="this.placeholder=&#39;&#39;" onblur="this.placeholder=&#39;Start with your idea or business name&#39;;">
-                    </span>
-
-                    <span class="field--addon field--addon--component field--addon--component-suffix flex--justify-self-center">
-                        <button id="aiDomainGenerateSubmit" class="btn btn--bg-dark btn--l" aria-label="Search" title="Search">
-                            <span class="sg-icon sg-icon--size_18 sg-icon--color-white no-display--1024" data-icon="/icons/material/icon_search"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 -960 960 960">
-    <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"></path>
-</svg>
-</span>
-                            <span class="btn__content no-display--1023">
-                                Search                            </span>
-                        </button>
-                    </span>
-                </span>
-            </div>
-
-            <div class="flex flex--gap-m flex--align-center flex--justify-center">
-                <ul class="domain--list flex flex--grow-1 flex--justify-center flex--gap-m text--align-center">
-                    <li class="card--mask-40 text--weight-l text--size-2xs text--color-white text--upper density-w--l density-h--s">
-                        .com
-                    </li>
-                    <li class="card--mask-40 text--weight-l text--size-2xs text--color-white text--upper density-w--l density-h--s">
-                        .org
-                    </li>
-                    <li class="card--mask-40 text--weight-l text--size-2xs text--color-white text--upper density-w--l density-h--s">
-                        .net
-                    </li>
-                    <li class="card--mask-40 text--weight-l text--size-2xs text--color-white text--upper density-w--l density-h--s">
-                        .biz
-                    </li>
-                    <li class="card--mask-40 text--weight-l text--size-2xs text--color-white text--upper density-w--l density-h--s">
-                        .info
-                    </li>
-                    <li class="card--mask-40 text--weight-l text--size-2xs text--color-white text--upper density-w--l density-h--s">
-                        .shop
-                    </li>
-                </ul>
-
-                <div>
-                    <a href="#" class="flex flex--gap-xs flex--align-center flex--justify-flex-start flex--flex-wrap-nowrap">
-                        <span class="link--more link--next text--size-2xs text--color-white">View all</span>
-                        <span aria-hidden="true" class="sg-icon sg-icon--size_20 sg-icon--color-white sg-icon--color-white" data-icon="icons/material/icon_arrow_outward"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 -960 960 960">
-    <path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"></path>
-</svg>
-</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="fade-up-section full-bleed bg--color-white">
-    <div class="fit-wide grid grid--m-2 grid--gap-4xl flex--align-center">
-        <div class="fade-up-element flex flex--direction-column flex--gap-4xl flex--align-flex-start flex--justify-center">
-            <div class="grid grid--gap-4xl">
-                <h2 class="title--4xl text--color-pri-darkest text--wrap-balance">Powerful AI Studio to optimize and scale work</h2>
-                <p class="text--size-l text--color-pri-darkest">Manage tasks seamlessly and work smarter with SiteGround AI Studio - your one place to chat with multiple AI models and access smart AI agents.</p>
-
-                <div>
-                    <a href="#" class="btn btn--bg-dark btn--l">
-                        <span>Start free</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="fade-up-element">
-            <img loading="lazy" class="border--radius-x-large" src="assets/ai-studio_en.webp" alt="SiteGround AI Studio—chat, create, and work with multiple AI agents." width="1" height="1">
-        </div>
-    </div>
-</section>
-
-<section class="fade-up-section full-bleed bg--color-black-high">
-    <div class="fit-wide grid grid--lg-1 grid--gap-5xl">
-        <div class="grid grid--m-2 grid--gap-4xl">
-    <div class="grid grid--gap-2xl">
-        <h2 class="fade-up-element title--4xl text--color-white text--wrap-balance">
-            Real support, real humans 24/7        </h2>
-        <div class="fade-up-element">
-            <img loading="lazy" src="assets/support.webp" alt="Our tech support heroes: Daniel (top left) and Velina (bottom left)" width="1" height="1">
-        </div>
-    </div>
-
-    <div class="fade-up-element flex flex--direction-column flex--justify-center flex--gap-4xl">
-        <div>
-            <div class="icon-box flex flex--flex-wrap-nowrap flex--gap-m flex--align-flex-start density-h--2xl density-top--none">
-                <span class="sg-icon sg-icon--size_40 text--color-white" data-icon="icons/material/icon_award_star"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 -960 960 960">
-    <path d="m363-310 117-71 117 71-31-133 104-90-137-11-53-126-53 126-137 11 104 90-31 133ZM480-28 346-160H160v-186L28-480l132-134v-186h186l134-132 134 132h186v186l132 134-132 134v186H614L480-28Zm0-112 100-100h140v-140l100-100-100-100v-140H580L480-820 380-720H240v140L140-480l100 100v140h140l100 100Zm0-340Z"></path>
-</svg>
-</span>
-                <div class="grid grid--gap-row-xs">
-                    <p class="font-family-main title--2xl text--weight-m text--color-white">20+ years experience</p>
-                    <p class="text--size-s text--color-neutral-dark">Helping businesses succeed online</p>
-                </div>
-            </div>
-            <div class="icon-box flex flex--flex-wrap-nowrap flex--gap-m flex--align-flex-start border--top-solid-light-1 density-h--2xl">
-                <span class="sg-icon sg-icon--size_40 text--color-white" data-icon="icons/material/icon_handshake"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 -960 960 960">
-    <path d="M475-160q4 0 8-2t6-4l328-328q12-12 17.5-27t5.5-30q0-16-5.5-30.5T817-607L647-777q-11-12-25.5-17.5T591-800q-15 0-30 5.5T534-777l-11 11 74 75q15 14 22 32t7 38q0 42-28.5 70.5T527-522q-20 0-38.5-7T456-550l-75-74-175 175q-3 3-4.5 6.5T200-435q0 8 6 14.5t14 6.5q4 0 8-2t6-4l136-136 56 56-135 136q-3 3-4.5 6.5T285-350q0 8 6 14t14 6q4 0 8-2t6-4l136-135 56 56-135 136q-3 2-4.5 6t-1.5 8q0 8 6 14t14 6q4 0 7.5-1.5t6.5-4.5l136-135 56 56-136 136q-3 3-4.5 6.5T454-180q0 8 6.5 14t14.5 6Zm-1 80q-37 0-65.5-24.5T375-166q-34-5-57-28t-28-57q-34-5-56.5-28.5T206-336q-38-5-62-33t-24-66q0-20 7.5-38.5T149-506l232-231 131 131q2 3 6 4.5t8 1.5q9 0 15-5.5t6-14.5q0-4-1.5-8t-4.5-6L398-777q-11-12-25.5-17.5T342-800q-15 0-30 5.5T285-777L144-635q-9 9-15 21t-8 24q-2 12 0 24.5t8 23.5l-58 58q-17-23-25-50.5T40-590q2-28 14-54.5T87-692l141-141q24-23 53.5-35t60.5-12q31 0 60.5 12t52.5 35l11 11 11-11q24-23 53.5-35t60.5-12q31 0 60.5 12t52.5 35l169 169q23 23 35 53t12 61q0 31-12 60.5T873-437L545-110q-14 14-32.5 22T474-80Zm-99-560Z"></path>
-</svg>
-</span>
-                <div class="grid grid--gap-row-xs">
-                    <p class="font-family-main title--2xl text--weight-m text--color-white">98% customer satisfaction</p>
-                    <p class="text--size-s text--color-neutral-dark">Steady for over 10 years</p>
-                </div>
-            </div>
-            <div class="icon-box flex flex--flex-wrap-nowrap flex--gap-m flex--align-flex-start border--top-solid-light-1 density-h--2xl">
-                <span class="sg-icon sg-icon--size_40 text--color-white" data-icon="icons/material/icon_volunteer"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 -960 960 960">
-    <path d="M640-440 474-602q-31-30-52.5-66.5T400-748q0-55 38.5-93.5T532-880q32 0 60 13.5t48 36.5q20-23 48-36.5t60-13.5q55 0 93.5 38.5T880-748q0 43-21 79.5T807-602L640-440Zm0-112 109-107q19-19 35-40.5t16-48.5q0-22-15-37t-37-15q-14 0-26.5 5.5T700-778l-60 72-60-72q-9-11-21.5-16.5T532-800q-22 0-37 15t-15 37q0 27 16 48.5t35 40.5l109 107ZM280-220l278 76 238-74q-5-9-14.5-15.5T760-240H558q-27 0-43-2t-33-8l-93-31 22-78 81 27q17 5 40 8t68 4q0-11-6.5-21T578-354l-234-86h-64v220ZM40-80v-440h304q7 0 14 1.5t13 3.5l235 87q33 12 53.5 42t20.5 66h80q50 0 85 33t35 87v40L560-60l-280-78v58H40Zm80-80h80v-280h-80v280Zm520-546Z"></path>
-</svg>
-</span>
-                <div class="grid grid--gap-row-xs">
-                    <p class="font-family-main title--2xl text--weight-m text--color-white">24/7 live support</p>
-                    <p class="text--size-s text--color-neutral-dark">Always available, always helpful</p>
-                </div>
-            </div>
-            <div class="icon-box flex flex--flex-wrap-nowrap flex--gap-m flex--align-flex-start border--top-solid-light-1 density-h--2xl density-bot--none">
-                <span class="sg-icon sg-icon--size_40 text--color-white" data-icon="icons/material/icon_award"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 -960 960 960">
-    <path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"></path>
-</svg>
-</span>
-                <div class="grid grid--gap-row-xs">
-                    <p class="font-family-main title--2xl text--weight-m text--color-white">Multiple awards</p>
-                    <p class="text--size-s text--color-neutral-dark">For best customer service</p>
-                </div>
-            </div>
-        </div>
-
-        <div>
-            <a href="#" class="flex flex--align-center flex--gap-xs flex--flex-wrap-nowrap">
-                <span class="link--more link--next font-family-main text--size-s text--color-white">Explore support</span>
-                <span aria-hidden="true" class="sg-icon sg-icon--size_24 sg-icon--color-white" data-icon="icons/material/icon_arrow_outward"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 -960 960 960">
-    <path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"></path>
-</svg>
-</span>
-            </a>
-        </div>
-    </div>
-</div>    </div>
-</section>
-
-<section class="fade-up-section full-bleed bg--color-white">
-            <div class="fit-wide grid grid--gap-5xl">
-    <div class="fade-up-element flex flex--direction-column flex--gap-l">
-                <h2 class="fade-up-element title--4xl">
-            Customer success stories        </h2>
-        <p class="fade-up-element text--size-l text--color-pri-darkest">
-            See how businesses and professionals grow with SiteGround.        </p>
-            </div>
-
-    <article class="swiper--videos">
-    <div class="grid grid--gap-4xl">
-        <div class="flex card flex--justify-flex-start">
-            <div class="swiper-container swiper-container--videos swiper-initialized swiper-horizontal swiper-backface-hidden">
-                <div class="swiper-wrapper" id="swiper-wrapper-7b329c7aa02b65ce" aria-live="polite" style="cursor: grab;">
-                    
-                    
-                    
-                    
-                    
-                <a href="#" class="swiper-slide swiper-slide--video bg--color-blue-low flex swiper-slide-active" target="_blank" role="group" aria-label="1 / 5" style="width: 1200px; margin-right: 40px;">
-                        <div class="swiper-card grid grid--m-tpl-8-9 grid--gap-l">
-                            <div class="flex flex--direction-column flex--justify-center flex--gap-l">
-                                <span aria-hidden="true" class="sg-icon sg-icon--size_40 sg-icon--color-salem" data-icon="icons/grey/icon_quotes"><!--?xml version="1.0" encoding="UTF-8"?--><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58.65 45.058"><path d="M21.143,0l-10.361,31.412,2.342-12.281c3.919,0,7.11,1.138,9.57,3.411,2.461,2.274,3.692,5.414,3.692,9.416,0,3.913-1.255,7.075-3.76,9.484-2.507,2.412-5.629,3.617-9.365,3.617-3.829,0-6.996-1.205-9.5-3.617-2.508-2.409-3.76-5.571-3.76-9.484,0-1.181.09-2.341.273-3.48.182-1.135.547-2.477,1.093-4.026.547-1.545,1.322-3.593,2.325-6.14L11.622,0h9.522s-.001,0-.001,0ZM53.408,0l-10.362,31.412,2.344-12.281c3.919,0,7.109,1.138,9.57,3.411,2.461,2.274,3.691,5.414,3.691,9.416,0,3.913-1.253,7.075-3.759,9.484-2.508,2.412-5.63,3.617-9.365,3.617-3.829,0-6.996-1.205-9.502-3.617-2.507-2.409-3.76-5.571-3.76-9.484,0-1.181.09-2.341.274-3.48.182-1.135.547-2.477,1.093-4.026.547-1.545,1.32-3.593,2.325-6.14L43.887,0h9.522-.001Z" fill="#049564"></path></svg>
-</span>
-                                <p class="text--size-l text--color-pri-darkest">
-                                    <b>I was trying to talk with my bank just now and it wasn’t instantaneous.</b> I was disappointed because I’m used to SiteGround’s standards.                                </p>
-                                <div>
-                                    <p class="text--size-l text--color-pri-darkest">
-                                        <strong>pixweb.fr</strong>
-                                    </p>
-                                    <p class="text--size-s text--color-pri-darkest">
-                                        Web design agency                                    </p>
-                                </div>
-                            </div>
-                            <div class="border--radius-large">
-                                <img loading="lazy" src="assets/pixweb-fr.png" alt="Profile of a man in a dark t-shirt staring out a window with a pencil behind his ear, dark rocket logo in the center and a browser overlay of his website in the top-right corner." width="16" height="9">
-                            </div>
-                        </div>
-                    </a><a href="#" class="swiper-slide swiper-slide--video bg--color-black-low flex swiper-slide-next" target="_blank" role="group" aria-label="2 / 5" style="width: 1200px; margin-right: 40px;">
-                        <div class="swiper-card grid grid--m-tpl-8-9 grid--gap-l">
-                            <div class="flex flex--direction-column flex--justify-center flex--gap-l">
-                                <span aria-hidden="true" class="sg-icon sg-icon--size_40 sg-icon--color-salem" data-icon="icons/grey/icon_quotes"><!--?xml version="1.0" encoding="UTF-8"?--><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58.65 45.058"><path d="M21.143,0l-10.361,31.412,2.342-12.281c3.919,0,7.11,1.138,9.57,3.411,2.461,2.274,3.692,5.414,3.692,9.416,0,3.913-1.255,7.075-3.76,9.484-2.507,2.412-5.629,3.617-9.365,3.617-3.829,0-6.996-1.205-9.5-3.617-2.508-2.409-3.76-5.571-3.76-9.484,0-1.181.09-2.341.273-3.48.182-1.135.547-2.477,1.093-4.026.547-1.545,1.322-3.593,2.325-6.14L11.622,0h9.522s-.001,0-.001,0ZM53.408,0l-10.362,31.412,2.344-12.281c3.919,0,7.109,1.138,9.57,3.411,2.461,2.274,3.691,5.414,3.691,9.416,0,3.913-1.253,7.075-3.759,9.484-2.508,2.412-5.63,3.617-9.365,3.617-3.829,0-6.996-1.205-9.502-3.617-2.507-2.409-3.76-5.571-3.76-9.484,0-1.181.09-2.341.274-3.48.182-1.135.547-2.477,1.093-4.026.547-1.545,1.32-3.593,2.325-6.14L43.887,0h9.522-.001Z" fill="#049564"></path></svg>
-</span>
-                                <p class="text--size-l text--color-pri-darkest">
-                                    <strong>SiteGround is obviously designed to get websites working really fast</strong>. It's got lots and lots of features we were able to tap into to make our site's performance 88.6% faster.                                </p>
-                                <div>
-                                    <p class="text--size-l text--color-pri-darkest">
-                                        <strong>japanskiexperience.com</strong>
-                                    </p>
-                                    <p class="text--size-s text--color-pri-darkest">
-                                        Ski travel agent                                    </p>
-                                </div>
-                            </div>
-                            <div class="border--radius-large">
-                                <img loading="lazy" src="assets/japan-ski-experience.png" alt="A smiling man in a plaid shirt, with overlays of colorful graphic design posters." width="16" height="9">
-                            </div>
-                        </div>
-                    </a><a href="#" class="swiper-slide swiper-slide--video bg--color-black-high flex" target="_blank" role="group" aria-label="3 / 5" style="width: 1200px; margin-right: 40px;">
-                        <div class="swiper-card grid grid--m-tpl-8-9 grid--gap-l">
-                            <div class="flex flex--direction-column flex--justify-center flex--gap-l">
-                                <span aria-hidden="true" class="sg-icon sg-icon--size_40 sg-icon--color-salem-lightest" data-icon="icons/grey/icon_quotes"><!--?xml version="1.0" encoding="UTF-8"?--><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58.65 45.058"><path d="M21.143,0l-10.361,31.412,2.342-12.281c3.919,0,7.11,1.138,9.57,3.411,2.461,2.274,3.692,5.414,3.692,9.416,0,3.913-1.255,7.075-3.76,9.484-2.507,2.412-5.629,3.617-9.365,3.617-3.829,0-6.996-1.205-9.5-3.617-2.508-2.409-3.76-5.571-3.76-9.484,0-1.181.09-2.341.273-3.48.182-1.135.547-2.477,1.093-4.026.547-1.545,1.322-3.593,2.325-6.14L11.622,0h9.522s-.001,0-.001,0ZM53.408,0l-10.362,31.412,2.344-12.281c3.919,0,7.109,1.138,9.57,3.411,2.461,2.274,3.691,5.414,3.691,9.416,0,3.913-1.253,7.075-3.759,9.484-2.508,2.412-5.63,3.617-9.365,3.617-3.829,0-6.996-1.205-9.502-3.617-2.507-2.409-3.76-5.571-3.76-9.484,0-1.181.09-2.341.274-3.48.182-1.135.547-2.477,1.093-4.026.547-1.545,1.32-3.593,2.325-6.14L43.887,0h9.522-.001Z" fill="#049564"></path></svg>
-</span>
-                                <p class="text--size-l text--color-white">
-                                    <strong>My site got faster on SiteGround</strong>, which has really helped with the increase in organic traffic                                </p>
-                                <div>
-                                    <p class="text--size-l text--color-white">
-                                        <strong>alixr.co.uk</strong>
-                                    </p>
-                                    <p class="text--size-s text--color-white">
-                                        Wellness &amp; Longevity Coach                                    </p>
-                                </div>
-                            </div>
-                            <div class="border--radius-large">
-                                <img loading="lazy" src="assets/alixr-co.webp" alt="Smiling man in a white shirt kneeling on a yacht, gazing at the sea, browser overlay of his website at the bottom right and a menu of four icons on the left." width="16" height="9">
-                            </div>
-                        </div>
-                    </a><a href="#" class="swiper-slide swiper-slide--video bg--color-blue-main flex" target="_blank" role="group" aria-label="4 / 5" style="width: 1200px; margin-right: 40px;">
-                        <div class="swiper-card grid grid--m-tpl-8-9 grid--gap-l">
-                            <div class="flex flex--direction-column flex--justify-center flex--gap-l">
-                                <span aria-hidden="true" class="sg-icon sg-icon--size_40 sg-icon--color-salem-lightest" data-icon="icons/grey/icon_quotes"><!--?xml version="1.0" encoding="UTF-8"?--><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58.65 45.058"><path d="M21.143,0l-10.361,31.412,2.342-12.281c3.919,0,7.11,1.138,9.57,3.411,2.461,2.274,3.692,5.414,3.692,9.416,0,3.913-1.255,7.075-3.76,9.484-2.507,2.412-5.629,3.617-9.365,3.617-3.829,0-6.996-1.205-9.5-3.617-2.508-2.409-3.76-5.571-3.76-9.484,0-1.181.09-2.341.273-3.48.182-1.135.547-2.477,1.093-4.026.547-1.545,1.322-3.593,2.325-6.14L11.622,0h9.522s-.001,0-.001,0ZM53.408,0l-10.362,31.412,2.344-12.281c3.919,0,7.109,1.138,9.57,3.411,2.461,2.274,3.691,5.414,3.691,9.416,0,3.913-1.253,7.075-3.759,9.484-2.508,2.412-5.63,3.617-9.365,3.617-3.829,0-6.996-1.205-9.502-3.617-2.507-2.409-3.76-5.571-3.76-9.484,0-1.181.09-2.341.274-3.48.182-1.135.547-2.477,1.093-4.026.547-1.545,1.32-3.593,2.325-6.14L43.887,0h9.522-.001Z" fill="#049564"></path></svg>
-</span>
-                                <p class="text--size-l text--color-white">
-                                    <strong>Not only do we spend 75% less on our monthly bill, but our website speed increased</strong>, when we moved to SiteGround! I couldn't be happier!                                </p>
-                                <div>
-                                    <p class="text--size-l text--color-white">
-                                        <strong>builtlean.com</strong>
-                                    </p>
-                                    <p class="text--size-s text--color-white">
-                                        Wellness Coach                                    </p>
-                                </div>
-                            </div>
-                            <div class="border--radius-large">
-                                <img loading="lazy" src="assets/marc-perry.png" alt="A man in a dark blue shirt, with background images showing a browser overlay of his agency&#39;s website on the left and a chart showing steady growth on the right" width="16" height="9">
-                            </div>
-                        </div>
-                    </a><a href="#" class="swiper-slide swiper-slide--video bg--color-green-low flex" target="_blank" role="group" aria-label="5 / 5" style="width: 1200px; margin-right: 40px;">
-                        <div class="swiper-card grid grid--m-tpl-8-9 grid--gap-l">
-                            <div class="flex flex--direction-column flex--justify-center flex--gap-l">
-                                <span aria-hidden="true" class="sg-icon sg-icon--size_40 sg-icon--color-salem" data-icon="icons/grey/icon_quotes"><!--?xml version="1.0" encoding="UTF-8"?--><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58.65 45.058"><path d="M21.143,0l-10.361,31.412,2.342-12.281c3.919,0,7.11,1.138,9.57,3.411,2.461,2.274,3.692,5.414,3.692,9.416,0,3.913-1.255,7.075-3.76,9.484-2.507,2.412-5.629,3.617-9.365,3.617-3.829,0-6.996-1.205-9.5-3.617-2.508-2.409-3.76-5.571-3.76-9.484,0-1.181.09-2.341.273-3.48.182-1.135.547-2.477,1.093-4.026.547-1.545,1.322-3.593,2.325-6.14L11.622,0h9.522s-.001,0-.001,0ZM53.408,0l-10.362,31.412,2.344-12.281c3.919,0,7.109,1.138,9.57,3.411,2.461,2.274,3.691,5.414,3.691,9.416,0,3.913-1.253,7.075-3.759,9.484-2.508,2.412-5.63,3.617-9.365,3.617-3.829,0-6.996-1.205-9.502-3.617-2.507-2.409-3.76-5.571-3.76-9.484,0-1.181.09-2.341.274-3.48.182-1.135.547-2.477,1.093-4.026.547-1.545,1.32-3.593,2.325-6.14L43.887,0h9.522-.001Z" fill="#049564"></path></svg>
-</span>
-                                <p class="text--size-l text--color-pri-darkest">
-                                    <strong>The reliability, the performance, the support – everything at SiteGround just works.</strong> When you're running a small team and working on tight deadlines, that peace of mind is invaluable.                                </p>
-                                <div>
-                                    <p class="text--size-l text--color-pri-darkest">
-                                        <strong>inklingdesign.ca</strong>
-                                    </p>
-                                    <p class="text--size-s text--color-pri-darkest">
-                                        Web Agency                                    </p>
-                                </div>
-                            </div>
-                            <div class="border--radius-large">
-                                <img loading="lazy" src="assets/inkling-design.png" alt="Four women around a round table with a laptop, with a browser overlay of their website in the top-right corner." width="16" height="9">
-                            </div>
-                        </div>
-                    </a></div>
-            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-        </div>
-
-        <div class="flex flex--justify-flex-end flex--align-center flex--justify-space-between-767 flex--gap-m">
-            <div class="swiper-pagination swiper-pagination-fraction swiper-pagination-horizontal"><span class="swiper-pagination-current">1</span> / <span class="swiper-pagination-total">5</span></div>
-<div class="flex flex--gap-m">
-    <div class="swiper-button-prev border--radius-circle swiper-button-disabled" onclick="pauseVideo()" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-7b329c7aa02b65ce" aria-disabled="true">
-        <span class="text--hidden">Previous slide</span>
-        <span class="sg-icon sg-icon--size_32 sg-icon--color-pri-darkest" data-icon="icons/material/icon_arrow_left"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-    <path d="M7.65 18L18.85 29.2L16 32L0 16L16 0L18.85 2.8L7.65 14H32V18H7.65Z" fill="#212121"></path>
-</svg>
-</span>
-    </div>
-    <div class="swiper-button-next border--radius-circle" onclick="pauseVideo()" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-7b329c7aa02b65ce" aria-disabled="false">
-        <span class="text--hidden">Next slide</span>
-        <span class="sg-icon sg-icon--size_32 sg-icon--color-pri-darkest" data-icon="icons/material/icon_arrow_right"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-    <path d="M24.35 18H0V14H24.35L13.15 2.8L16 0L32 16L16 32L13.15 29.2L24.35 18Z" fill="#212121"></path>
-</svg>
-</span>
-    </div>
-</div>        </div>
-    </div>
-</article>
-
-
-<script>
-    const cookieConsentKey = 'Please <a class="link--text" href="javascript:Cookiebot.renew()">accept marketing cookies</a> to watch this video.';
-</script></div>    </section>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const button = document.getElementById('aiDomainGenerateSubmit');
-        const input = document.getElementById('webhostingDomainSearchDomain');
-
-        function handleDomainSearch() {
-            button.classList.add('btn--state-loading');
-
-            const inputValue = input.value.trim();
-            const formattedInput = inputValue.split(' ').join('+');
-
-            const currentDomain = window.location.origin;
-
-            const url = `${currentDomain}/domain/find?aisearch=${formattedInput}`;
-
-            window.location.href = url;
-        }
-
-        button.addEventListener('click', handleDomainSearch);
-
-        input.addEventListener('keypress', function(event) {
-            if (event.key === 'Enter') {
-                handleDomainSearch();
-            }
-        });
-    });
-</script>
 		</main>
 
 					
-<footer id="footer" class="footer">
-	<div class="fit-wide grid grid--gap-l">
-	    		<section class="footer__content grid grid--gap-column-l grid--gap-row-xl grid--m-5 grid--sm-3">
-			<div class="accordion__container flex flex--direction-column flex--gap-xl">
-				<h3 class="accordion__container__title text--size-m">Hosting Services</h3>
-				<ul class="accordion__container__content footer__content__links">
-				    <li><a href="#">Web Hosting</a></li>
-                    <li><a href="#">Hosting for WordPress</a></li>
-                    <li><a href="#">Hosting for WooCommerce</a></li>
-                    <li><a href="#">Hosting Affiliate Program</a></li>
-                                            <li><a href="#">Web Hosting for Agencies</a></li>
-                                        <li><a href="#">Cloud Hosting</a></li>
-                    <li><a href="#">Reseller Hosting</a></li>
-                </ul>
-			</div>
-			<div class="accordion__container flex flex--direction-column flex--gap-xl">
-				<h3 class="accordion__container__title text--size-m">Products</h3>
-				<ul class="accordion__container__content footer__content__links">
-                    <li><a href="#">Website Builder</a></li>
-                    <li><a href="#">Ecommerce</a></li>
-                    <li><a href="#">Coderick AI</a></li>
-                    <li><a href="#">AI Studio</a></li>
-                    <li><a href="#">Email Marketing</a></li>
-                    <li><a href="#">Plugins for WordPress</a></li>
-                    <li><a href="#">Domain Names</a></li>
-				</ul>
-			</div>
-			<div class="accordion__container flex flex--direction-column flex--gap-xl">
-				<h3 class="accordion__container__title text--size-m">About Us</h3>
-				<ul class="accordion__container__content footer__content__links">
-                    <li><a href="#">Company</a></li>
-                    <li><a href="#">Hosting Technology</a></li>
-                    <li><a href="#">SiteGround Reviews</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                                        				</ul>
-			</div>
-			<div class="accordion__container flex flex--direction-column flex--gap-xl">
-				<h3 class="accordion__container__title text--size-m">Resources</h3>
-				<ul class="accordion__container__content footer__content__links">
-				    <li><a href="#">Blog</a></li>
-				                        <li><a href="#">Success Stories</a></li>
-                                        <li><a href="#">Knowledge Base</a></li>
-                    <li><a href="#">Tutorials</a></li>
-                                        <li><a href="#">Academy</a></li>
-                                        <li hidden="hidden"><a href="#">Ebooks &amp; Guides</a></li>
-				</ul>
-			</div>
 
-			<div class="footer__content__blog flex flex--direction-column flex--gap-xl no-display--767">
-				<h3 class="text--size-m">Recent From Blog</h3>
-								<div class="flex flex--direction-column flex--gap-l">
-                                        <article class="flex flex--direction-column flex--gap-s">
-                        <div class="text--size-2xs">
-                            <a class="text--color-pri-darkest" href="#" title="WordPress 7.0 x SiteGround AI Studio: Webinar Video and Q&amp;A" target="_blank">WordPress 7.0 x SiteGround AI Studio: Webinar Video and Q&amp;A</a>
-                        </div>
-                        <ul class="flex flex--justify-space-between flex--align-center flex--gap-xs text--size-2xs text--color-pri-darkest">
-                                                        <li>01 Jun, 2026</li>
-                            <li>
-                                <a class="flex flex--gap-xs flex--align-center flex--justify-flex-start flex--flex-wrap-nowrap" href="#" target="_blank">
-                                    <span class="link--more link--next text--size-3xs text--color-pri-darkest text--upper text--weight-l">Read More</span>
-                                    <span aria-hidden="true" class="sg-icon sg-icon--size_18 sg-icon--color-pri-darkest" data-icon="icons/material/icon_arrow_outward"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 -960 960 960">
-    <path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"></path>
-</svg>
-</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </article>
-                                        <article class="flex flex--direction-column flex--gap-s">
-                        <div class="text--size-2xs">
-                            <a class="text--color-pri-darkest" href="#" title="File uploads in Coderick AI: bring your code and design exports in the chat" target="_blank">File uploads in Coderick AI: bring your code and design exports in the chat</a>
-                        </div>
-                        <ul class="flex flex--justify-space-between flex--align-center flex--gap-xs text--size-2xs text--color-pri-darkest">
-                                                        <li>29 May, 2026</li>
-                            <li>
-                                <a class="flex flex--gap-xs flex--align-center flex--justify-flex-start flex--flex-wrap-nowrap" href="#" target="_blank">
-                                    <span class="link--more link--next text--size-3xs text--color-pri-darkest text--upper text--weight-l">Read More</span>
-                                    <span aria-hidden="true" class="sg-icon sg-icon--size_18 sg-icon--color-pri-darkest" data-icon="icons/material/icon_arrow_outward"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 -960 960 960">
-    <path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"></path>
-</svg>
-</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </article>
-                    				</div>
-							</div>
-		</section>
-
-		<section class="footer__top grid grid--m-4-auto grid--sm-2-auto grid--gap-l density-h--l">
-            			<div class="footer__regions flex flex--wrap-column-center-767">
-                <div class="flex flex--align-center flex--gap-xs">
-                    <span class="text--size-2xs text--color-pri-darkest">Region: </span>
-                                         <div>
-                        <button id="locationSwitcher" type="button" class="companylocation accordion__container__title" aria-label="Europe"><span id="choosen" class="icon lazyload eu" title="Europe">
-    Europe    <span class="sg-icon sg-icon--size_20 sg--icon--color-pri-darkest">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 -960 960 960"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"></path></svg>    </span>
-</span>
-<ul class="locations">
-	<li>
-		<a href="#" title="United States" data-region-hash="MWc9PQ==">
-			<span class="icon lazyload us">United States</span>
-		</a>
-	</li>
-	<li>
-		<a href="#" title="United Kingdom">
-			<span class="icon lazyload uk">United Kingdom</span>
-		</a>
-	</li>
-	<li>
-		<a href="#" title="Spain">
-			<span class="icon lazyload es">Spain</span>
-		</a>
-	</li>
-	<li>
-		<a href="#" title="Italy">
-			<span class="icon lazyload it">Italy</span>
-		</a>
-	</li>
-	<li>
-		<a href="#" title="Germany">
-			<span class="icon lazyload de">Germany</span>
-		</a>
-	</li>
-	<li>
-		<a href="#" title="France">
-			<span class="icon lazyload fr">France</span>
-		</a>
-	</li>
-	<li>
-		<a href="#" title="Australia">
-			<span class="icon lazyload au">Australia</span>
-		</a>
-	</li>
-	<li>
-		<a href="#" title="LATAM">
-			<span class="icon lazyload la">LATAM</span>
-		</a>
-	</li>
-	<li>
-		<a href="#" title="World">
-			<span class="icon lazyload ww">World</span>
-		</a>
-	</li>
-</ul></button>
-                    </div>
-                                    </div>
-            </div>
-            
-            <div id="selectable-language-phd" class="footer__languages flex flex--wrap-column-center-767">    <div class="lang-switch flex flex--align-center flex--gap-xs">
-        <span class="text--size-2xs text--color-pri-darkest">Language:</span>
-        <div class="accordion__container lang-switch-list">
-            <button class="accordion__container__title accordion__language selected">
-                <span class="icon lazyload">English</span>
-            </button>
-            <ul class="accordion__container__content grid">
-                                    <li>
-                        <a href="#" onclick="return false;" class="lang-switch-option lang-switch-option--selected">
-                            English                        </a>
-                    </li>
-                                    <li>
-                        <a href="#" onclick="return false;" class="lang-switch-option ">
-                            Español                        </a>
-                    </li>
-                                    <li>
-                        <a href="#" onclick="return false;" class="lang-switch-option ">
-                            Italiano                        </a>
-                    </li>
-                                    <li>
-                        <a href="#" onclick="return false;" class="lang-switch-option ">
-                            Deutsch                        </a>
-                    </li>
-                                    <li>
-                        <a href="#" onclick="return false;" class="lang-switch-option ">
-                            Français                        </a>
-                    </li>
-                            </ul>
-        </div>
-    </div>
-</div>
-
-            <div class="footer__ai flex flex--align-center  flex--gap-xs flex--wrap-column-center-767">
-                <span class="text--size-2xs text--color-pri-darkest">
-                    <span class="no-display--1023">SiteGround AI Summary:</span>
-                    <span class="no-display--1024">Ask AI for a summary of SiteGround:</span>
-                </span>
-
-                <ul class="flex flex--gap-s flex--align-center flex--justify-center">
-                    <li>
-                        <a class="flex" href="https://chatgpt.com/?q=As+a+business+looking+to+establish+and+grow+an+online+presence+without+a+dedicated+technical+team%2C+I+want+to+understand+what+makes+SiteGround+more+than+just+a+hosting+company+and+why+it%27s+the+best+all-in-one+platform+to+consolidate+my+web+tools+under+one+roof.+Summarize+the+key+highlights+from+SiteGround%27s+full+product+ecosystem%2C+covering+hosting+plans%2C+website+builder%2C+domain+registration%2C+email+marketing%2C+ecommerce+tools%2C+AI+capabilities+%28Coderick+AI+and+AI+Studio%29%2C+collaboration+tools%2C+and+affiliate+program%2C+and+how+they+all+work+together+to+help+small+businesses+and+agencies+grow+online+without+relying+on+multiple+separate+providers.+Also+include+how+SiteGround+compares+to+other+leading+hosting+providers.+Then+finish+with%3A+%281%29+a+90-second+pitch+I+can+use+to+explain+SiteGround+to+someone+unfamiliar+with+web+hosting%2C+%282%29+the+top+5+reasons+someone+will+choose+SiteGround%2C+and+%283%29+three+immediate+outcomes+I+can+expect+after+starting+with+SiteGround.+Keep+the+answer+short+and+structured%3A+https%3A%2F%2Feu.siteground.com" rel="noopener" target="_blank" title="chatGPT">
-                            <span class="sg-icon sg-icon--size_22" data-icon="logos/chatGPT"><svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="mask0_49_2710" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="21" height="20">
-<path d="M20.1801 0H0V20H20.1801V0Z" fill="white"></path>
-</mask>
-<g mask="url(#mask0_49_2710)">
-<path d="M7.73998 7.27997V5.37996C7.73998 5.21994 7.80004 5.09989 7.93997 5.01999L11.7601 2.81999C12.2801 2.52 12.9001 2.38007 13.54 2.38007C15.94 2.38007 17.4601 4.24011 17.4601 6.22002C17.4601 6.35999 17.4601 6.52001 17.44 6.68003L13.48 4.35999C13.24 4.22006 12.9999 4.22006 12.76 4.35999L7.73998 7.27997ZM16.66 14.68V10.1399C16.66 9.85986 16.5399 9.65987 16.3 9.5199L11.28 6.59992L12.92 5.65985C13.06 5.57995 13.18 5.57995 13.32 5.65985L17.14 7.85986C18.2401 8.49993 18.98 9.85986 18.98 11.1798C18.98 12.6997 18.0801 14.0998 16.66 14.6799V14.68ZM6.55999 10.68L4.91999 9.7201C4.78006 9.6402 4.72 9.52011 4.72 9.36009V4.96013C4.72 2.82019 6.35999 1.20008 8.58004 1.20008C9.42015 1.20008 10.2 1.48014 10.8602 1.98013L6.92017 4.2602C6.68024 4.40013 6.56019 4.60012 6.56019 4.88023V10.6802L6.55999 10.68ZM10.09 12.72L7.73998 11.4V8.60013L10.09 7.28018L12.4399 8.60013V11.4L10.09 12.72ZM11.6 18.8001C10.76 18.8001 9.98012 18.52 9.31995 18.0201L13.2599 15.74C13.4999 15.6 13.6199 15.4 13.6199 15.1199V9.31995L15.28 10.2799C15.4199 10.3598 15.48 10.4798 15.48 10.6399V15.0399C15.48 17.1798 13.8199 18.7999 11.6 18.7999V18.8001ZM6.85998 14.3401L3.03986 12.1401C1.93978 11.5 1.19987 10.1401 1.19987 8.82018C1.19987 7.28018 2.11989 5.9002 3.5398 5.32014V9.88012C3.5398 10.1602 3.65989 10.3602 3.89981 10.5001L8.89992 13.4L7.25992 14.3401C7.11999 14.42 6.9999 14.42 6.85998 14.3401ZM6.6401 17.6201C4.38008 17.6201 2.72003 15.9201 2.72003 13.8201C2.72003 13.6601 2.74008 13.5 2.75996 13.34L6.69996 15.6201C6.93988 15.7601 7.18001 15.7601 7.41994 15.6201L12.4399 12.7202V14.6202C12.4399 14.7802 12.3799 14.9003 12.2399 14.9802L8.41986 17.1802C7.89983 17.4802 7.2798 17.6201 6.63989 17.6201H6.6401ZM11.6 20C14.0201 20 16.04 18.2801 16.5001 16C18.7401 15.4199 20.1801 13.3199 20.1801 11.18C20.1801 9.77992 19.5802 8.42003 18.5001 7.43999C18.6001 7.01995 18.6602 6.59992 18.6602 6.18009C18.6602 3.32013 16.3401 1.17999 13.6601 1.17999C13.1202 1.17999 12.6002 1.25989 12.0801 1.44C11.18 0.559962 9.93998 0 8.58004 0C6.16004 0 4.14015 1.7199 3.67998 3.99998C1.44 4.58003 0 6.68003 0 8.81997C0 10.22 0.599936 11.5799 1.67997 12.56C1.57997 12.98 1.51995 13.4 1.51995 13.8199C1.51995 16.6799 3.84 18.82 6.52001 18.82C7.05993 18.82 7.57996 18.7401 8.09999 18.56C8.99991 19.44 10.2399 20 11.6 20Z" fill="#212121"></path>
-</g>
-</svg>
-</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="flex" href="https://claude.ai/new?q=As+a+business+looking+to+establish+and+grow+an+online+presence+without+a+dedicated+technical+team%2C+I+want+to+understand+what+makes+SiteGround+more+than+just+a+hosting+company+and+why+it%27s+the+best+all-in-one+platform+to+consolidate+my+web+tools+under+one+roof.+Summarize+the+key+highlights+from+SiteGround%27s+full+product+ecosystem%2C+covering+hosting+plans%2C+website+builder%2C+domain+registration%2C+email+marketing%2C+ecommerce+tools%2C+AI+capabilities+%28Coderick+AI+and+AI+Studio%29%2C+collaboration+tools%2C+and+affiliate+program%2C+and+how+they+all+work+together+to+help+small+businesses+and+agencies+grow+online+without+relying+on+multiple+separate+providers.+Also+include+how+SiteGround+compares+to+other+leading+hosting+providers.+Then+finish+with%3A+%281%29+a+90-second+pitch+I+can+use+to+explain+SiteGround+to+someone+unfamiliar+with+web+hosting%2C+%282%29+the+top+5+reasons+someone+will+choose+SiteGround%2C+and+%283%29+three+immediate+outcomes+I+can+expect+after+starting+with+SiteGround.+Keep+the+answer+short+and+structured%3A+https%3A%2F%2Feu.siteground.com" rel="noopener" target="_blank" title="Claude">
-                            <span class="sg-icon sg-icon--size_22" data-icon="logos/claude"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_49_2717)">
-<path d="M4.05469 13.135L7.93969 10.955L8.00469 10.765L7.93969 10.66H7.74969L7.09969 10.62L4.87969 10.56L2.95469 10.48L1.08969 10.38L0.619688 10.28L0.179688 9.7L0.224688 9.41L0.619688 9.145L1.18469 9.19499L2.43469 9.27999L4.30969 9.41L5.66969 9.49L7.68469 9.7H8.00469L8.04969 9.56999L7.93969 9.49L7.85469 9.41L5.91469 8.095L3.81469 6.705L2.71469 5.905L2.11969 5.5L1.81969 5.12L1.68969 4.29L2.22969 3.695L2.95469 3.745L3.13969 3.795L3.87469 4.36L5.44469 5.575L7.49469 7.085L7.79469 7.335L7.91469 7.25L7.92969 7.19L7.79469 6.965L6.67969 4.95L5.48969 2.9L4.95969 2.05L4.81969 1.54C4.76969 1.33 4.73469 1.155 4.73469 0.939995L5.34969 0.104995L5.68969 -0.00500488L6.50969 0.104995L6.85469 0.404995L7.36469 1.57L8.18969 3.405L9.46969 5.9L9.84469 6.64L10.0447 7.325L10.1197 7.535H10.2497V7.415L10.3547 6.01L10.5497 4.285L10.7397 2.065L10.8047 1.44L11.1147 0.689995L11.7297 0.284995L12.2097 0.514995L12.6047 1.08L12.5497 1.445L12.3147 2.97L11.8547 5.36L11.5547 6.96H11.7297L11.9297 6.76L12.7397 5.685L14.0997 3.985L14.6997 3.31L15.3997 2.565L15.8497 2.21H16.6997L17.3247 3.14L17.0447 4.1L16.1697 5.21L15.4447 6.15L14.4047 7.55L13.7547 8.67L13.8147 8.76L13.9697 8.745L16.3197 8.245L17.5897 8.015L19.1047 7.755L19.7897 8.075L19.8647 8.39999L19.5947 9.06499L17.9747 9.465L16.0747 9.845L13.2447 10.515L13.2097 10.54L13.2497 10.59L14.5247 10.71L15.0697 10.74H16.4047L18.8897 10.925L19.5397 11.355L19.9297 11.88L19.8647 12.28L18.8647 12.79L17.5147 12.47L14.3647 11.72L13.2847 11.45H13.1347V11.54L14.0347 12.42L15.6847 13.91L17.7497 15.83L17.8547 16.305L17.5897 16.68L17.3097 16.64L15.4947 15.275L14.7947 14.66L13.2097 13.325H13.1047V13.465L13.4697 14L15.3997 16.9L15.4997 17.79L15.3597 18.08L14.8597 18.255L14.3097 18.155L13.1797 16.57L12.0147 14.785L11.0747 13.185L10.9597 13.25L10.4047 19.225L10.1447 19.53L9.54469 19.76L9.04469 19.38L8.77969 18.765L9.04469 17.55L9.36469 15.965L9.62469 14.705L9.85969 13.14L9.99969 12.62L9.98969 12.585L9.87469 12.6L8.69469 14.22L6.89969 16.645L5.47969 18.165L5.13969 18.3L4.54969 17.995L4.60469 17.45L4.93469 16.965L6.89969 14.465L8.08469 12.915L8.84969 12.02L8.84469 11.89H8.79969L3.57969 15.28L2.64969 15.4L2.24969 15.025L2.29969 14.41L2.48969 14.21L4.05969 13.13L4.05469 13.135Z" fill="#D97757"></path>
-</g>
-<defs>
-<clippath id="clip0_49_2717">
-<rect width="19.5" height="20" fill="white" transform="translate(0.179688)"></rect>
-</clippath>
-</defs>
-</svg>
-</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="flex" href="https://www.google.com/search?udm=50&amp;q=As+a+business+looking+to+establish+and+grow+an+online+presence+without+a+dedicated+technical+team%2C+I+want+to+understand+what+makes+SiteGround+more+than+just+a+hosting+company+and+why+it%27s+the+best+all-in-one+platform+to+consolidate+my+web+tools+under+one+roof.+Summarize+the+key+highlights+from+SiteGround%27s+full+product+ecosystem%2C+covering+hosting+plans%2C+website+builder%2C+domain+registration%2C+email+marketing%2C+ecommerce+tools%2C+AI+capabilities+%28Coderick+AI+and+AI+Studio%29%2C+collaboration+tools%2C+and+affiliate+program%2C+and+how+they+all+work+together+to+help+small+businesses+and+agencies+grow+online+without+relying+on+multiple+separate+providers.+Also+include+how+SiteGround+compares+to+other+leading+hosting+providers.+Then+finish+with%3A+%281%29+a+90-second+pitch+I+can+use+to+explain+SiteGround+to+someone+unfamiliar+with+web+hosting%2C+%282%29+the+top+5+reasons+someone+will+choose+SiteGround%2C+and+%283%29+three+immediate+outcomes+I+can+expect+after+starting+with+SiteGround.+Keep+the+answer+short+and+structured%3A+https%3A%2F%2Feu.siteground.com" rel="noopener" target="_blank" title="Gemini">
-                            <span class="sg-icon sg-icon--size_22" data-icon="logos/gemini"><svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M17.8595 9.02917C16.4752 8.43983 15.2164 7.59094 14.1512 6.52833C12.6678 5.04194 11.6095 3.18542 11.0862 1.15167C11.0633 1.06134 11.0108 0.981239 10.9373 0.924027C10.8637 0.866815 10.7732 0.835754 10.68 0.835754C10.5868 0.835754 10.4962 0.866815 10.4226 0.924027C10.3491 0.981239 10.2967 1.06134 10.2737 1.15167C9.74935 3.18515 8.69086 5.04147 7.20788 6.52833C6.14257 7.59082 4.88383 8.43969 3.49954 9.02917C2.95788 9.2625 2.40121 9.45 1.83121 9.59417C1.74033 9.6165 1.65956 9.66865 1.60182 9.7423C1.54408 9.81595 1.5127 9.90683 1.5127 10.0004C1.5127 10.094 1.54408 10.1849 1.60182 10.2585C1.65956 10.3322 1.74033 10.3843 1.83121 10.4067C2.40121 10.55 2.95621 10.7375 3.49954 10.9708C4.88391 11.5602 6.14268 12.4091 7.20788 13.4717C8.6917 14.9582 9.75032 16.815 10.2737 18.8492C10.296 18.94 10.3482 19.0208 10.4218 19.0786C10.4955 19.1363 10.5864 19.1677 10.68 19.1677C10.7735 19.1677 10.8644 19.1363 10.9381 19.0786C11.0117 19.0208 11.0639 18.94 11.0862 18.8492C11.2295 18.2783 11.417 17.7233 11.6504 17.18C12.2397 15.7956 13.0886 14.5368 14.1512 13.4717C15.6379 11.9882 17.4947 10.9299 19.5287 10.4067C19.619 10.3837 19.6991 10.3313 19.7563 10.2577C19.8136 10.1842 19.8446 10.0936 19.8446 10.0004C19.8446 9.90722 19.8136 9.81668 19.7563 9.7431C19.6991 9.66953 19.619 9.61712 19.5287 9.59417C18.9582 9.45062 18.4 9.26168 17.8595 9.02917Z" fill="#3186FF"></path>
-<path d="M17.8595 9.02917C16.4752 8.43983 15.2164 7.59094 14.1512 6.52833C12.6678 5.04194 11.6095 3.18542 11.0862 1.15167C11.0633 1.06134 11.0108 0.981239 10.9373 0.924027C10.8637 0.866815 10.7732 0.835754 10.68 0.835754C10.5868 0.835754 10.4962 0.866815 10.4226 0.924027C10.3491 0.981239 10.2967 1.06134 10.2737 1.15167C9.74935 3.18515 8.69086 5.04147 7.20788 6.52833C6.14257 7.59082 4.88383 8.43969 3.49954 9.02917C2.95788 9.2625 2.40121 9.45 1.83121 9.59417C1.74033 9.6165 1.65956 9.66865 1.60182 9.7423C1.54408 9.81595 1.5127 9.90683 1.5127 10.0004C1.5127 10.094 1.54408 10.1849 1.60182 10.2585C1.65956 10.3322 1.74033 10.3843 1.83121 10.4067C2.40121 10.55 2.95621 10.7375 3.49954 10.9708C4.88391 11.5602 6.14268 12.4091 7.20788 13.4717C8.6917 14.9582 9.75032 16.815 10.2737 18.8492C10.296 18.94 10.3482 19.0208 10.4218 19.0786C10.4955 19.1363 10.5864 19.1677 10.68 19.1677C10.7735 19.1677 10.8644 19.1363 10.9381 19.0786C11.0117 19.0208 11.0639 18.94 11.0862 18.8492C11.2295 18.2783 11.417 17.7233 11.6504 17.18C12.2397 15.7956 13.0886 14.5368 14.1512 13.4717C15.6379 11.9882 17.4947 10.9299 19.5287 10.4067C19.619 10.3837 19.6991 10.3313 19.7563 10.2577C19.8136 10.1842 19.8446 10.0936 19.8446 10.0004C19.8446 9.90722 19.8136 9.81668 19.7563 9.7431C19.6991 9.66953 19.619 9.61712 19.5287 9.59417C18.9582 9.45062 18.4 9.26168 17.8595 9.02917Z" fill="url(#paint0_linear_49_2719)"></path>
-<path d="M17.8595 9.02917C16.4752 8.43983 15.2164 7.59094 14.1512 6.52833C12.6678 5.04194 11.6095 3.18542 11.0862 1.15167C11.0633 1.06134 11.0108 0.981239 10.9373 0.924027C10.8637 0.866815 10.7732 0.835754 10.68 0.835754C10.5868 0.835754 10.4962 0.866815 10.4226 0.924027C10.3491 0.981239 10.2967 1.06134 10.2737 1.15167C9.74935 3.18515 8.69086 5.04147 7.20788 6.52833C6.14257 7.59082 4.88383 8.43969 3.49954 9.02917C2.95788 9.2625 2.40121 9.45 1.83121 9.59417C1.74033 9.6165 1.65956 9.66865 1.60182 9.7423C1.54408 9.81595 1.5127 9.90683 1.5127 10.0004C1.5127 10.094 1.54408 10.1849 1.60182 10.2585C1.65956 10.3322 1.74033 10.3843 1.83121 10.4067C2.40121 10.55 2.95621 10.7375 3.49954 10.9708C4.88391 11.5602 6.14268 12.4091 7.20788 13.4717C8.6917 14.9582 9.75032 16.815 10.2737 18.8492C10.296 18.94 10.3482 19.0208 10.4218 19.0786C10.4955 19.1363 10.5864 19.1677 10.68 19.1677C10.7735 19.1677 10.8644 19.1363 10.9381 19.0786C11.0117 19.0208 11.0639 18.94 11.0862 18.8492C11.2295 18.2783 11.417 17.7233 11.6504 17.18C12.2397 15.7956 13.0886 14.5368 14.1512 13.4717C15.6379 11.9882 17.4947 10.9299 19.5287 10.4067C19.619 10.3837 19.6991 10.3313 19.7563 10.2577C19.8136 10.1842 19.8446 10.0936 19.8446 10.0004C19.8446 9.90722 19.8136 9.81668 19.7563 9.7431C19.6991 9.66953 19.619 9.61712 19.5287 9.59417C18.9582 9.45062 18.4 9.26168 17.8595 9.02917Z" fill="url(#paint1_linear_49_2719)"></path>
-<path d="M17.8595 9.02917C16.4752 8.43983 15.2164 7.59094 14.1512 6.52833C12.6678 5.04194 11.6095 3.18542 11.0862 1.15167C11.0633 1.06134 11.0108 0.981239 10.9373 0.924027C10.8637 0.866815 10.7732 0.835754 10.68 0.835754C10.5868 0.835754 10.4962 0.866815 10.4226 0.924027C10.3491 0.981239 10.2967 1.06134 10.2737 1.15167C9.74935 3.18515 8.69086 5.04147 7.20788 6.52833C6.14257 7.59082 4.88383 8.43969 3.49954 9.02917C2.95788 9.2625 2.40121 9.45 1.83121 9.59417C1.74033 9.6165 1.65956 9.66865 1.60182 9.7423C1.54408 9.81595 1.5127 9.90683 1.5127 10.0004C1.5127 10.094 1.54408 10.1849 1.60182 10.2585C1.65956 10.3322 1.74033 10.3843 1.83121 10.4067C2.40121 10.55 2.95621 10.7375 3.49954 10.9708C4.88391 11.5602 6.14268 12.4091 7.20788 13.4717C8.6917 14.9582 9.75032 16.815 10.2737 18.8492C10.296 18.94 10.3482 19.0208 10.4218 19.0786C10.4955 19.1363 10.5864 19.1677 10.68 19.1677C10.7735 19.1677 10.8644 19.1363 10.9381 19.0786C11.0117 19.0208 11.0639 18.94 11.0862 18.8492C11.2295 18.2783 11.417 17.7233 11.6504 17.18C12.2397 15.7956 13.0886 14.5368 14.1512 13.4717C15.6379 11.9882 17.4947 10.9299 19.5287 10.4067C19.619 10.3837 19.6991 10.3313 19.7563 10.2577C19.8136 10.1842 19.8446 10.0936 19.8446 10.0004C19.8446 9.90722 19.8136 9.81668 19.7563 9.7431C19.6991 9.66953 19.619 9.61712 19.5287 9.59417C18.9582 9.45062 18.4 9.26168 17.8595 9.02917Z" fill="url(#paint2_linear_49_2719)"></path>
-<defs>
-<lineargradient id="paint0_linear_49_2719" x1="6.51288" y1="12.9167" x2="9.84621" y2="10" gradientUnits="userSpaceOnUse">
-<stop stop-color="#08B962"></stop>
-<stop offset="1" stop-color="#08B962" stop-opacity="0"></stop>
-</lineargradient>
-<lineargradient id="paint1_linear_49_2719" x1="7.34621" y1="4.58333" x2="10.2629" y2="9.16667" gradientUnits="userSpaceOnUse">
-<stop stop-color="#F94543"></stop>
-<stop offset="1" stop-color="#F94543" stop-opacity="0"></stop>
-</lineargradient>
-<lineargradient id="paint2_linear_49_2719" x1="3.59621" y1="11.25" x2="15.2629" y2="10" gradientUnits="userSpaceOnUse">
-<stop stop-color="#FABC12"></stop>
-<stop offset="0.46" stop-color="#FABC12" stop-opacity="0"></stop>
-</lineargradient>
-</defs>
-</svg>
-</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="flex" href="https://x.com/i/grok?text=As+a+business+looking+to+establish+and+grow+an+online+presence+without+a+dedicated+technical+team%2C+I+want+to+understand+what+makes+SiteGround+more+than+just+a+hosting+company+and+why+it%27s+the+best+all-in-one+platform+to+consolidate+my+web+tools+under+one+roof.+Summarize+the+key+highlights+from+SiteGround%27s+full+product+ecosystem%2C+covering+hosting+plans%2C+website+builder%2C+domain+registration%2C+email+marketing%2C+ecommerce+tools%2C+AI+capabilities+%28Coderick+AI+and+AI+Studio%29%2C+collaboration+tools%2C+and+affiliate+program%2C+and+how+they+all+work+together+to+help+small+businesses+and+agencies+grow+online+without+relying+on+multiple+separate+providers.+Also+include+how+SiteGround+compares+to+other+leading+hosting+providers.+Then+finish+with%3A+%281%29+a+90-second+pitch+I+can+use+to+explain+SiteGround+to+someone+unfamiliar+with+web+hosting%2C+%282%29+the+top+5+reasons+someone+will+choose+SiteGround%2C+and+%283%29+three+immediate+outcomes+I+can+expect+after+starting+with+SiteGround.+Keep+the+answer+short+and+structured%3A+https%3A%2F%2Feu.siteground.com" rel="noopener" target="_blank" title="Grok AI">
-                            <span class="sg-icon sg-icon--size_22" data-icon="logos/grok_ai"><svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_49_2724)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M8.71871 12.826L15.6373 7.71207C15.9764 7.46061 16.4612 7.55858 16.6233 7.94797C17.4732 10.0024 17.0933 12.4704 15.4005 14.165C13.7086 15.8595 11.3533 16.2307 9.20087 15.3843L6.84989 16.4744C10.2225 18.782 14.3174 18.2114 16.8766 15.6479C18.9067 13.6152 19.5354 10.8444 18.9475 8.34602L18.9527 8.35207C18.1002 4.68207 19.1625 3.21476 21.3375 0.215081C21.3895 0.143943 21.4415 0.0728455 21.4927 0L18.6301 2.86614V2.85744L8.71611 12.8278M7.29042 14.0687C4.86916 11.7533 5.28717 8.17085 7.352 6.10427C8.87916 4.57541 11.3819 3.95102 13.5664 4.8685L15.9122 3.78451C15.4246 3.42583 14.8912 3.13415 14.3261 2.91728C12.9054 2.33582 11.3445 2.18745 9.83973 2.49082C8.33496 2.79419 6.95348 3.53575 5.86908 4.62224C3.67241 6.82146 2.98127 10.2036 4.16761 13.0896C5.05387 15.2464 3.60131 16.7718 2.13835 18.312C1.61887 18.8583 1.09855 19.4038 0.679688 19.9813L7.28782 14.0713" fill="#212121"></path>
-</g>
-<defs>
-<clippath id="clip0_49_2724">
-<rect width="20.813" height="20" fill="white" transform="translate(0.679688)"></rect>
-</clippath>
-</defs>
-</svg>
-</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="flex" href="https://www.perplexity.ai/search?q=As+a+business+looking+to+establish+and+grow+an+online+presence+without+a+dedicated+technical+team%2C+I+want+to+understand+what+makes+SiteGround+more+than+just+a+hosting+company+and+why+it%27s+the+best+all-in-one+platform+to+consolidate+my+web+tools+under+one+roof.+Summarize+the+key+highlights+from+SiteGround%27s+full+product+ecosystem%2C+covering+hosting+plans%2C+website+builder%2C+domain+registration%2C+email+marketing%2C+ecommerce+tools%2C+AI+capabilities+%28Coderick+AI+and+AI+Studio%29%2C+collaboration+tools%2C+and+affiliate+program%2C+and+how+they+all+work+together+to+help+small+businesses+and+agencies+grow+online+without+relying+on+multiple+separate+providers.+Also+include+how+SiteGround+compares+to+other+leading+hosting+providers.+Then+finish+with%3A+%281%29+a+90-second+pitch+I+can+use+to+explain+SiteGround+to+someone+unfamiliar+with+web+hosting%2C+%282%29+the+top+5+reasons+someone+will+choose+SiteGround%2C+and+%283%29+three+immediate+outcomes+I+can+expect+after+starting+with+SiteGround.+Keep+the+answer+short+and+structured%3A+https%3A%2F%2Feu.siteground.com" rel="noopener" target="_blank" title="Perplexity">
-                            <span class="sg-icon sg-icon--size_22" data-icon="logos/perplexity"><svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_49_2726)">
-<path d="M16.9807 0V6.06H19.2432V14.6833H16.7973V20L10.9332 14.8383V19.9592H10.024V14.8325L4.15316 20V14.6125H1.74316V5.99H4.1465V0L10.024 5.41167V0.158333H10.9323V5.56667L16.9807 0ZM10.9332 7.53667V13.6358L15.8882 17.9975V12.0333L10.9332 7.53667ZM10.0173 7.47L5.06233 11.9683V17.9975L10.0173 13.6358V7.47083V7.47ZM16.7973 13.7867H18.334V6.9575H11.7098L16.7973 11.5742V13.7867ZM9.31233 6.88667H2.6515V13.7158H4.1515V11.5692L9.3115 6.88583L9.31233 6.88667ZM5.05566 2.06333V5.98833H9.31816L5.05566 2.06333ZM16.0715 2.06333L11.809 5.98833H16.0715V2.06333Z" fill="#22B8CD"></path>
-</g>
-<defs>
-<clippath id="clip0_49_2726">
-<rect width="20" height="20" fill="white" transform="translate(0.493164)"></rect>
-</clippath>
-</defs>
-</svg>
-</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-			<div class="flex flex--justify-flex-end flex--justify-content-start-1023 flex--wrap-column-center-767">
-    <div class="footer__socials flex flex--align-center">
-        <ul class="flex flex--align-center flex--gap-xs">
-            <li><a class="sg-icon sg-icon--color-black" href="#" title="Facebook" target="_blank" rel="noreferrer" data-icon="icon-facebook"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <title>Facebook</title>
-<g clip-path="url(#clip0_3202_44830)">
-<path d="M23 12.2C23 6.12493 18.0751 1.20001 12 1.20001C5.92492 1.20001 1 6.12493 1 12.2C1 17.3586 4.55168 21.6873 9.34284 22.8762V15.5616H7.07464V12.2H9.34284V10.7515C9.34284 7.00757 11.0373 5.27221 14.713 5.27221C15.41 5.27221 16.6125 5.40905 17.1044 5.54545V8.59245C16.8448 8.56517 16.3938 8.55153 15.8337 8.55153C14.0302 8.55153 13.3332 9.23485 13.3332 11.0111V12.2H16.9262L16.3089 15.5616H13.3332V23.1195C18.78 22.4617 23.0004 17.8241 23.0004 12.2H23Z" fill="white"></path>
-</g>
-<defs>
-<clippath id="clip0_3202_44830">
-<rect width="22" height="22" fill="white" transform="translate(1 1.20001)"></rect>
-</clippath>
-</defs>
-</svg>
-</a></li>
-            <li><a class="sg-icon sg-icon--color-black" href="#" title="Instagram" target="_blank" rel="noreferrer" data-icon="icon_instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><title>Instagram</title><path d="M10,1.8c2.67,0,3,0,4,.06a5.61,5.61,0,0,1,1.86.34,3.33,3.33,0,0,1,1.9,1.9A5.61,5.61,0,0,1,18.14,6c.05,1,.06,1.37.06,4s0,3-.06,4a5.61,5.61,0,0,1-.34,1.86,3.33,3.33,0,0,1-1.9,1.9,5.61,5.61,0,0,1-1.86.34c-1,.05-1.37.06-4,.06s-3,0-4-.06A5.61,5.61,0,0,1,4.1,17.8a3.33,3.33,0,0,1-1.9-1.9A5.61,5.61,0,0,1,1.86,14c-.05-1-.06-1.37-.06-4s0-3,.06-4A5.61,5.61,0,0,1,2.2,4.1,3.33,3.33,0,0,1,4.1,2.2,5.61,5.61,0,0,1,6,1.86c1-.05,1.37-.06,4-.06M10,0C7.28,0,6.94,0,5.88.06A7.59,7.59,0,0,0,3.45.52,4.85,4.85,0,0,0,1.68,1.68,4.85,4.85,0,0,0,.52,3.45,7.59,7.59,0,0,0,.06,5.88C0,6.94,0,7.28,0,10s0,3.06.06,4.12a7.59,7.59,0,0,0,.46,2.43,4.85,4.85,0,0,0,1.16,1.77,4.85,4.85,0,0,0,1.77,1.16,7.59,7.59,0,0,0,2.43.46C6.94,20,7.28,20,10,20s3.06,0,4.12-.06a7.59,7.59,0,0,0,2.43-.46,5.19,5.19,0,0,0,2.93-2.93,7.59,7.59,0,0,0,.46-2.43c0-1.06.06-1.4.06-4.12s0-3.06-.06-4.12a7.59,7.59,0,0,0-.46-2.43,4.85,4.85,0,0,0-1.16-1.77A4.85,4.85,0,0,0,16.55.52,7.59,7.59,0,0,0,14.12.06C13.06,0,12.72,0,10,0Z" fill="#fff"></path><path d="M10,4.86A5.14,5.14,0,1,0,15.14,10,5.14,5.14,0,0,0,10,4.86Zm0,8.47A3.33,3.33,0,1,1,13.33,10,3.33,3.33,0,0,1,10,13.33Z" fill="#fff"></path><circle cx="15.34" cy="4.66" r="1.2" fill="#fff"></circle></svg></a></li>
-            <li><a class="sg-icon sg-icon--color-black" href="#" title="X" target="_blank" rel="noreferrer" data-icon="icon-twitter"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <title>X logo</title>
-<g clip-path="url(#clip0_3202_44726)">
-<path d="M14.0575 10.4643L21.3392 2H19.6137L13.291 9.34942L8.24117 2H2.41675L10.0531 13.1136L2.41675 21.9897H4.14236L10.8192 14.2285L16.1522 21.9897H21.9766L14.0571 10.4643H14.0575ZM11.6941 13.2115L10.9204 12.1049L4.76412 3.29901H7.41455L12.3827 10.4056L13.1564 11.5123L19.6145 20.7498H16.964L11.6941 13.212V13.2115Z" fill="black"></path>
-</g>
-<defs>
-<clippath id="clip0_3202_44726">
-<rect width="20" height="20" fill="white" transform="translate(2 2)"></rect>
-</clippath>
-</defs>
-</svg>
-</a></li>
-            <li><a class="sg-icon sg-icon--color-black" href="#" title="YouTube" target="_blank" rel="noreferrer" data-icon="icon_youtube"><svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 18.204"><title>YouTube</title><path d="M25.464,2.849A3.257,3.257,0,0,0,23.173.557C21.138,0,13,0,13,0S4.862,0,2.827.536A3.324,3.324,0,0,0,.535,2.849,34.341,34.341,0,0,0,0,9.1a34.231,34.231,0,0,0,.535,6.254,3.259,3.259,0,0,0,2.292,2.291C4.883,18.2,13,18.2,13,18.2s8.138,0,10.173-.535a3.258,3.258,0,0,0,2.292-2.292A34.347,34.347,0,0,0,26,9.124,32.591,32.591,0,0,0,25.464,2.849ZM10.409,13V5.2l6.767,3.9Z"></path></svg>
-</a></li>
-        </ul>
-    </div>
-</div>		</section>
-
-		<section class="footer__bottom border--top-solid density-top--xl grid grid--gap-s grid--sm-3">
-			<div class="footer__bottom__pp">
-				<ul class="flex flex--gap-m flex flex--align-center text--size-2xs flex--justify-center-767">
-					<li><a class="link--text text--color-pri-darkest" href="#">Legal</a></li>
-					<li><a class="link--text text--color-pri-darkest" href="#" onclick="return false;">Privacy</a></li>
-					<li id="ccpaRightsLink" style="display: none"><a class="link--text text--color-pri-darkest" href="#" onclick="return false;">Do Not Sell or Share My Personal Information</a></li>
-				 	<li><a class="link--text text--color-pri-darkest" href="#" onclick="return false;">Cookies</a></li>
-                    <li><a class="link--text text--color-pri-darkest" href="#" target="_blank">AI Info</a></li>
-				</ul>
-			</div>
-
-            <div class="flex flex--align-center flex--justify-center flex--wrap-column-center-767">
-			    <p class="text--size-2xs text--color-pri-darkest text--align-center">© 2026 All rights reserved.</p>
-			</div>
-
-			    <div id="vatSwitcher" class="flex flex--justify-flex-end flex--align-center flex--gap-xs flex--wrap-column-center-767" style="display: flex;">
-                        <span class="js-vat-price-info text--size-2xs text--color-pri-darkest">Prices exclude VAT</span>
-                            <a class="text--size-2xs text--color-pri-darkest border--bottom-solid" href="#" onclick="toggleVatIncluded();return false;">Show prices with VAT</a>
-                        </div>		</section>
-	</div>
-</footer>
 
 <script type="text/javascript">
 var width = null;
